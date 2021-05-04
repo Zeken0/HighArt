@@ -5,10 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="Description" content="Home page to a blog site">
-        <link rel="stylesheet" href="/CSS/home.css">
+        <link rel="stylesheet" href="/CSS/contact.css">
         <script src="https://kit.fontawesome.com/31d00bb5b7.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">   
-        <title>Home |</title>
+        <title>Contact Us</title>
     </head>
     <body>
         <header>
@@ -24,16 +24,41 @@
                 <div class="menu">
                     <ul>
                         <li>
-                            <a class="active" href="/index.html">Home</a>
+                            <a href="/index.html">Home</a>
                             <a href="/about.html">About</a>
                             <a href="/blogg-page.html">Blogg</a>
-                            <a href="/contact-page.html">Contact Us</a>
+                            <a class="active" href="/contact-page.html">Contact Us</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
-        <main></main>
+        <div>
+            <h1>Contact Us</h1>
+        </div>
+        <main>
+            <div class="form_div">
+                <form>
+                    <label for="fullname">Full Name</label>
+                    <input type="text" name="fullname" id="fullname" />
+                    <p class="error fullNameError">Please enter your full name</p>
+    
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" />
+                    <p class="error emailError">Please enter a valid email</p>
+    
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject" id="subject" />
+                    <p class="error subjectError">Please enter a subject</p>
+    
+                    <label for="message">Message</label>
+                    <input type="text" name="message" id="message" />
+                    <p class="error messageError">Message have to be more than 25 characters long</p>
+    
+                    <button id="submit">Submit</button>
+                </form>
+            </div>
+        </main>
         <footer>
             <div class="footer-items">
                 <div><i class="fab fa-spotify"></i></div>
@@ -44,6 +69,6 @@
         </footer>
         <script src="/JS/components/hamburger-menu.js"></script>
         <script src="/JS//components/alert.js"></script>
-        <script src="/JS/home.js"></script>
+        <script src="/JS/contact.js"></script>
     </body>
 </html>

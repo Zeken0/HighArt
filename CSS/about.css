@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #f9f9f9;
+  font-family: "montserrat", sans-serif;
+}
+
+/* ----------------------------------------------------- Header -------------------------------------------- */
+nav {
+  height: 71px;
+  background-color: rgb(43, 40, 40);
+  color: black;
+  padding: 0px 5px 0px 5px;
+  z-index: 3;
+  width: 100%;
+  position: relative;
+}
+
+.logo {
+  cursor: pointer;
+  width: fit-content;
+}
+
+.menu {
+  text-align: center;
+  font-family: "space mono", monospace;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 20px 20px 20px 20px;
+  border-bottom: solid white;
+}
+
+ul li .active {
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+}
+
+ul li a:hover {
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+}
+
+.hamburger {
+  background-color: transparent;
+  font-size: 1.8rem;
+  color: white;
+  border: 0;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
+/* ----------------------------------------------------- Main -------------------------------------------- */
+main {
+  width: 80%;
+  margin: auto;
+  height: 100%;
+}
+
+/* ----------------------------------------------------- Footer -------------------------------------------- */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  background-color: rgb(43, 40, 40);
+  height: 100px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer-items {
+  display: flex;
+  font-size: 3rem;
+  color: white;
+  column-gap: 2rem;
+}
+
+.fa-facebook-square:hover {
+  cursor: pointer;
+  color: grey;
+}
+.fa-instagram-square:hover {
+  cursor: pointer;
+  color: grey;
+}
+.fa-spotify:hover {
+  cursor: pointer;
+  color: grey;
+}
+.fa-twitter-square:hover {
+  cursor: pointer;
+  color: grey;
+}
+
+/* ----------------------------------------------------- Tablet -------------------------------------------- */
+@media (max-width: 991px) /*Tablet*/ {
+  .hamburger {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    display: block;
+  }
+
+  .hamburger:active {
+    color: grey;
+  }
+
+  .menu {
+    position: absolute;
+    display: none;
+    top: 4.55rem;
+    width: 100%;
+    height: 206.5px;
+    background: rgb(43, 40, 40);
+    right: 0;
+    text-align: center;
+    transition: all 0.5s;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.1);
+  }
+
+  ul li .active {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+  }
+
+  ul li a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+  }
+
+  .menu.togglecls {
+    display: block;
+  }
+
+  ul {
+    height: 100%;
+  }
+
+  li {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul li a {
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 12px 0px 12px 0px;
+  }
+
+  ul li .active {
+    transition: 0s;
+  }
+}
+
+/* ----------------------------------------------------- Mobile -------------------------------------------- */
+@media (max-width: 767px) /*Mobile*/ {
+  .hamburger {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    display: block;
+  }
+
+  .hamburger:active {
+    color: grey;
+  }
+
+  .menu {
+    position: absolute;
+    display: none;
+    top: 4.55rem;
+    width: 100%;
+    height: 206.5px;
+    background: rgb(43, 40, 40);
+    right: 0;
+    text-align: center;
+    transition: all 0.5s;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.1);
+  }
+
+  ul li .active {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+  }
+
+  ul li a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+  }
+
+  .menu.togglecls {
+    display: block;
+  }
+
+  ul {
+    height: 100%;
+  }
+
+  li {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul li a {
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 12px 0px 12px 0px;
+  }
+}
