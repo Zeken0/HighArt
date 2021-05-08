@@ -98,7 +98,7 @@ main {
 
 .left-content h1 {
   font-size: 3rem;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .form_div {
@@ -107,6 +107,7 @@ main {
   width: 31rem;
   height: 35.9rem;
   box-shadow: 1px 1px 4px 0.1px rgba(0, 0, 0, 0.1);
+  border: none;
   border-radius: 3px;
 }
 
