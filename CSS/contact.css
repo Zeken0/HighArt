@@ -10,9 +10,17 @@ body {
   height: 100vh;
   background-color: #fefefe;
   font-family: "montserrat", sans-serif;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
 }
 
 /* ----------------------------------------------------- Header -------------------------------------------- */
+header {
+  grid-area: header;
+}
+
 nav {
   height: 71px;
   background-color: rgb(43, 40, 40);
@@ -69,27 +77,37 @@ ul li a:hover {
 
 /* ----------------------------------------------------- Main -------------------------------------------- */
 main {
+  grid-area: main;
   width: 90%;
   margin: auto;
-  height: 100%;
-  margin-top: 3rem;
-  display: flex;
-  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+  display: grid;
+  column-gap: 1rem;
+  grid-template-areas: "left-content right-content";
 }
 
-h1 {
-  text-align: center;
-  font-size: 3.5rem;
-  color: black;
-  margin-top: 4rem;
+.left-content {
+  grid-area: left-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+.left-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
 }
 
 .form_div {
-  background-color: white;
+  background-color: #fefefe;
   padding: 1.5rem;
-  width: 40rem;
+  width: 31rem;
   height: 35.9rem;
-  box-shadow: 1px 1px 4px 0.5px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 4px 0.1px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
 }
 
 input[type="text"] {
@@ -97,6 +115,7 @@ input[type="text"] {
   height: 30px;
   border: solid 1.2px gray;
   font-size: 1rem;
+  border-radius: 3px;
 }
 
 label {
@@ -138,6 +157,17 @@ button:hover {
   color: white;
 }
 
+.right-content {
+  grid-area: right-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-content img {
+  height: 420px;
+}
+
 .hide {
   display: none;
 }
@@ -148,6 +178,7 @@ button:hover {
 
 /* ----------------------------------------------------- Footer -------------------------------------------- */
 footer {
+  grid-area: footer;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -248,7 +279,15 @@ footer {
   }
 
   main {
-    width: 60%;
+    grid-template-areas:
+      "right-content"
+      "left-content";
+    width: 100%;
+    row-gap: 1rem;
+  }
+
+  .right-content img {
+    height: 422px;
   }
 }
 
@@ -313,14 +352,22 @@ footer {
   }
 
   main {
-    width: 90%;
+    grid-template-areas:
+      "right-content"
+      "left-content";
+    width: 100%;
   }
 
-  h1 {
-    font-size: 2.7rem;
+  .left-content button {
+    width: 100%;
   }
 
   .form_div {
     height: 37.5rem;
+    width: auto;
+  }
+
+  .right-content img {
+    height: 195px;
   }
 }
