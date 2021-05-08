@@ -8,11 +8,19 @@
 
 body {
   height: 100vh;
-  background-color: #f9f9f9;
+  background-color: #fefefe;
   font-family: "montserrat", sans-serif;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
 }
 
 /* ----------------------------------------------------- Header -------------------------------------------- */
+header {
+  grid-area: header;
+}
+
 nav {
   height: 71px;
   background-color: rgb(43, 40, 40);
@@ -69,13 +77,65 @@ ul li a:hover {
 
 /* ----------------------------------------------------- Main -------------------------------------------- */
 main {
-  width: 80%;
+  grid-area: main;
+  width: 90%;
   margin: auto;
-  height: 100%;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  display: grid;
+  grid-template-areas: "left-content right-content";
+}
+
+.left-content {
+  grid-area: left-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+  padding: 1rem 1rem 0rem 1rem;
+}
+
+.left-content h1 {
+  font-size: 2.5rem;
+}
+.left-content p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.01rem;
+}
+
+.left-content button {
+  margin-top: 3rem;
+  height: 50px;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  background-color: rgb(43, 40, 40);
+  color: white;
+  border-radius: 3px;
+}
+
+.left-content button:hover {
+  background-color: rgba(43, 40, 40, 0.918);
+  color: white;
+}
+
+.right-content {
+  grid-area: right-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-content img {
+  height: 560px;
 }
 
 /* ----------------------------------------------------- Footer -------------------------------------------- */
 footer {
+  grid-area: footer;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -174,6 +234,16 @@ footer {
   ul li .active {
     transition: 0s;
   }
+
+  main {
+    grid-template-areas:
+      "right-content"
+      "left-content";
+  }
+
+  .right-content img {
+    height: 500px;
+  }
 }
 
 /* ----------------------------------------------------- Mobile -------------------------------------------- */
@@ -234,5 +304,20 @@ footer {
     text-transform: uppercase;
     font-weight: 700;
     padding: 12px 0px 12px 0px;
+  }
+
+  main {
+    grid-template-areas:
+      "right-content"
+      "left-content";
+    width: 100%;
+  }
+
+  .left-content button {
+    width: 100%;
+  }
+
+  .right-content img {
+    height: 265px;
   }
 }

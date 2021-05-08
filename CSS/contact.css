@@ -69,7 +69,7 @@ ul li a:hover {
 
 /* ----------------------------------------------------- Main -------------------------------------------- */
 main {
-  width: 80%;
+  width: 90%;
   margin: auto;
   height: 100%;
   margin-top: 3rem;
@@ -87,7 +87,7 @@ h1 {
 .form_div {
   background-color: white;
   padding: 1.5rem;
-  width: 45rem;
+  width: 40rem;
   height: 35.9rem;
   box-shadow: 1px 1px 4px 0.5px rgba(0, 0, 0, 0.1);
 }
@@ -129,6 +129,8 @@ form button {
   color: white;
   cursor: pointer;
   font-size: 1.2rem;
+  border-radius: 3px;
+  text-transform: uppercase;
 }
 
 button:hover {

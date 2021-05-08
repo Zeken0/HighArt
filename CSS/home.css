@@ -8,11 +8,19 @@
 
 body {
   height: 100vh;
-  background-color: #f9f9f9;
+  background-color: #fefefe;
   font-family: "montserrat", sans-serif;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
 }
 
 /* ----------------------------------------------------- Header -------------------------------------------- */
+header {
+  grid-area: header;
+}
+
 nav {
   height: 71px;
   background-color: rgb(43, 40, 40);
@@ -69,13 +77,15 @@ ul li a:hover {
 
 /* ----------------------------------------------------- Main -------------------------------------------- */
 main {
-  width: 80%;
+  grid-area: main;
+  width: 90%;
   margin: auto;
   height: 100%;
 }
 
 /* ----------------------------------------------------- Footer -------------------------------------------- */
 footer {
+  grid-area: footer;
   display: flex;
   flex-direction: row;
   justify-content: center;
