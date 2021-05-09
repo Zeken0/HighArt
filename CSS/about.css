@@ -22,10 +22,15 @@ header {
 }
 
 nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10rem;
+  padding-left: 1rem;
   height: 71px;
-  background-color: rgb(43, 40, 40);
+  background-color: white;
   color: black;
-  padding: 0px 5px 0px 5px;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   z-index: 3;
   width: 100%;
   position: relative;
@@ -33,7 +38,6 @@ nav {
 
 .logo {
   cursor: pointer;
-  width: fit-content;
 }
 
 .menu {
@@ -42,30 +46,26 @@ nav {
 }
 
 nav ul li a {
-  color: white;
+  color: black;
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 700;
   padding: 20px 20px 20px 20px;
-  border-bottom: solid white;
 }
 
 ul li .active {
-  background-color: white;
-  color: black;
-  transition: 0.5s;
+  border-bottom: solid black;
 }
 
 ul li a:hover {
-  background-color: white;
-  color: black;
-  transition: 0.5s;
+  border-bottom: solid black;
+  transition: 0.2s;
 }
 
 .hamburger {
   background-color: transparent;
   font-size: 1.8rem;
-  color: white;
+  color: black;
   border: 0;
   cursor: pointer;
   display: none;
@@ -115,7 +115,7 @@ main {
   width: 100%;
   text-transform: uppercase;
   font-size: 1.2rem;
-  background-color: rgb(43, 40, 40);
+  background-color: black;
   color: white;
   border-radius: 3px;
   cursor: pointer;
@@ -146,7 +146,7 @@ footer {
   justify-content: center;
   align-items: center;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
-  background-color: rgb(43, 40, 40);
+  background-color: black;
   height: 100px;
   align-items: center;
   justify-content: space-evenly;
@@ -155,25 +155,33 @@ footer {
 .footer-items {
   display: flex;
   font-size: 3rem;
-  color: white;
-  column-gap: 2rem;
+  color: whitesmoke;
+  column-gap: 3.5rem;
 }
 
-.fa-facebook-square:hover {
+.fa-facebook-f:hover {
+  font-size: 3.5rem;
   cursor: pointer;
-  color: grey;
+  transition: 0.3s;
+  color: #4267b2;
 }
-.fa-instagram-square:hover {
+.fa-instagram:hover {
+  font-size: 3.5rem;
   cursor: pointer;
-  color: grey;
+  transition: 0.3s;
+  color: #e1306c;
 }
 .fa-spotify:hover {
+  font-size: 3.5rem;
   cursor: pointer;
-  color: grey;
+  transition: 0.3s;
+  color: #1db954;
 }
-.fa-twitter-square:hover {
+.fa-twitter:hover {
+  font-size: 3.5rem;
   cursor: pointer;
-  color: grey;
+  transition: 0.3s;
+  color: #1da1f2;
 }
 
 /* ----------------------------------------------------- Tablet -------------------------------------------- */
@@ -193,9 +201,9 @@ footer {
     position: absolute;
     display: none;
     top: 4.55rem;
-    width: 100%;
-    height: 206.5px;
-    background: rgb(43, 40, 40);
+    width: 35%;
+    height: 202px;
+    background: white;
     right: 0;
     text-align: center;
     transition: all 0.5s;
@@ -203,15 +211,13 @@ footer {
   }
 
   ul li .active {
-    background-color: white;
-    color: black;
-    transition: 0.5s;
+    color: white;
+    background-color: black;
   }
 
   ul li a:hover {
-    background-color: white;
-    color: black;
-    transition: 0.5s;
+    color: whitesmoke;
+    background-color: black;
   }
 
   .menu.togglecls {
@@ -229,7 +235,8 @@ footer {
   }
 
   nav ul li a {
-    color: white;
+    color: black;
+    border-bottom: solid black 1px;
     font-size: 17px;
     text-transform: uppercase;
     font-weight: 700;
@@ -269,8 +276,8 @@ footer {
     display: none;
     top: 4.55rem;
     width: 100%;
-    height: 206.5px;
-    background: rgb(43, 40, 40);
+    height: 202px;
+    background: white;
     right: 0;
     text-align: center;
     transition: all 0.5s;
@@ -278,15 +285,13 @@ footer {
   }
 
   ul li .active {
-    background-color: white;
-    color: black;
-    transition: 0.5s;
+    color: white;
+    background-color: black;
   }
 
   ul li a:hover {
-    background-color: white;
-    color: black;
-    transition: 0.5s;
+    color: whitesmoke;
+    background-color: black;
   }
 
   .menu.togglecls {
@@ -304,7 +309,8 @@ footer {
   }
 
   nav ul li a {
-    color: white;
+    color: black;
+    border-bottom: solid black 1px;
     font-size: 17px;
     text-transform: uppercase;
     font-weight: 700;
