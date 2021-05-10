@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="Description" content="Home-page to a blog site">
         <link rel="stylesheet" href="/CSS/home.css">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
         <script src="https://kit.fontawesome.com/31d00bb5b7.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
         <title>Home</title>
@@ -15,6 +17,10 @@
             <nav>
                 <div class="logo">
                     <a href="/index.html"><img src="/img/logo.png" alt="logo"></a>
+                </div>
+                <div class="search">
+                    <input type="search" name="search" placeholder="Search" id="bar">
+                    <a href="/blogg-page.html"><i class="fas fa-search"></i></a>
                 </div>
                 <div>
                     <button class="hamburger" onclick="toggleClass()">
@@ -38,7 +44,9 @@
                 <div class="top-left-content">
                     <h1>Welcome to <span class="title">HIGH </span>ART the blogg about the most influential albums of the 20th century.</h1>
                     <p>Click here to check it out !</p>
-                    <button>Explore</button>
+                    <a href="/blogg-page.html">
+                        <button>Explore</button>
+                    </a>
                 </div>
                 <div class="top-right-content">
                     <img src="/img/pic3.png" alt="image og people and music icons">
@@ -46,11 +54,9 @@
             </div>
             <div class="bottom-content">
                 <div class="bottom-top-content">
-                    <h2>Latest Post</h2>
+                    <h2>Latest Posts</h2>
                 </div>
-                <div class="bottom-lower-content">
-                    2
-                </div>
+                <div class="bottom-lower-content"></div>
             </div>
         </main>
         <footer>
@@ -63,6 +69,19 @@
         </footer>
         <script src="/JS/components/hamburger-menu.js"></script>
         <script src="/JS//components/alert.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script>
+            $('.bottom-lower-content').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                centerMode: true,
+                variableWidth: true
+            });
+        </script>
         <script src="/JS/home.js"></script>
     </body>
 </html>

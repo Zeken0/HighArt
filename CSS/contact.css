@@ -25,8 +25,8 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  column-gap: 10rem;
-  padding-left: 1rem;
+  justify-content: space-between;
+  padding: 0 1rem 0 1rem;
   height: 71px;
   background-color: white;
   color: black;
@@ -37,19 +37,46 @@ nav {
 }
 
 .logo {
+  width: fit-content;
   cursor: pointer;
 }
 
+.search {
+  width: 35%;
+  position: relative;
+}
+
+#bar {
+  width: 93.5%;
+  height: 2rem;
+  background-color: whitesmoke;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 0 10px 0 10px;
+  font-weight: 500;
+}
+
+.search i {
+  height: 2rem;
+  padding: 8px 8px 11px 8px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  width: fit-content;
+  position: absolute;
+}
+
 .menu {
-  text-align: center;
-  font-family: "space mono", monospace;
+  width: fit-content;
+  font-family: "roboto";
 }
 
 nav ul li a {
   color: black;
-  font-size: 20px;
+  font-size: 1.3rem;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   padding: 20px 20px 20px 20px;
 }
 
@@ -78,12 +105,12 @@ ul li a:hover {
 /* ----------------------------------------------------- Main -------------------------------------------- */
 main {
   grid-area: main;
-  width: 90%;
+  width: 95%;
+  height: 100%;
   margin: auto;
-  margin-top: 3.5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   display: grid;
-  column-gap: 1rem;
+  column-gap: 0.1rem;
   grid-template-areas: "left-content right-content";
 }
 
@@ -93,18 +120,19 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 2rem;
+  row-gap: 1rem;
 }
 
 .left-content h1 {
-  font-size: 2.7rem;
-  font-weight: 900;
+  font-size: 2.5rem;
+  font-weight: 800;
+  font-family: "roboto";
 }
 
 .form_div {
   background-color: #fefefe;
   padding: 1.5rem;
-  width: 25rem;
+  width: 24rem;
   height: fit-content;
   box-shadow: 1px 1px 4px 1px gainsboro;
   border: none;
@@ -232,9 +260,6 @@ footer {
 /* ----------------------------------------------------- Tablet -------------------------------------------- */
 @media (max-width: 991px) /*Tablet*/ {
   .hamburger {
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
     display: block;
   }
 
@@ -242,12 +267,17 @@ footer {
     color: grey;
   }
 
+  .search {
+    margin-left: 2rem;
+    width: 45%;
+  }
+
   .menu {
     position: absolute;
     display: none;
     top: 4.55rem;
     width: 35%;
-    height: 202px;
+    height: 181.5px;
     background: white;
     right: 0;
     text-align: center;
@@ -284,7 +314,6 @@ footer {
     border-bottom: solid black 1px;
     font-size: 17px;
     text-transform: uppercase;
-    font-weight: 700;
     padding: 12px 0px 12px 0px;
   }
 
@@ -297,7 +326,9 @@ footer {
       "right-content"
       "left-content";
     width: 100%;
+    height: unset;
     row-gap: 1rem;
+    margin-bottom: 3rem;
   }
 
   .form_div {
@@ -312,9 +343,6 @@ footer {
 /* ----------------------------------------------------- Mobile -------------------------------------------- */
 @media (max-width: 767px) /*Mobile*/ {
   .hamburger {
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
     display: block;
   }
 
@@ -322,12 +350,16 @@ footer {
     color: grey;
   }
 
+  .search {
+    display: none;
+  }
+
   .menu {
     position: absolute;
     display: none;
     top: 4.55rem;
     width: 100%;
-    height: 200px;
+    height: 178.7px;
     background: white;
     right: 0;
     text-align: center;
@@ -364,7 +396,6 @@ footer {
     border-bottom: none;
     font-size: 17px;
     text-transform: uppercase;
-    font-weight: 700;
     padding: 12px 0px 12px 0px;
   }
 
@@ -373,6 +404,7 @@ footer {
       "right-content"
       "left-content";
     width: 100%;
+    margin-bottom: 1rem;
   }
 
   .left-content button {

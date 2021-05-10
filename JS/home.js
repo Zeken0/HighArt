@@ -1,35 +1,29 @@
-$('.sliders').slick({
-    dots: true,
-    infinite: false,
-    speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    responsive: [
-    {
-        breakpoint: 1024,
-        settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
+async function getPosts() {
+    try {
+        const repsonse = await fetch('https://api.a1tech.store//wp-json/wp/v2/posts');
+        const result = await repsonse.json();  
+        
+        for (let i = 0; i < result.length; i++) {
+
+            document.querySelector('.bottom-lower-content').innerHTML += `
+            <div class="">
+            <a href="/details-page.html?id=${result[i].id}"><h3>${result[i].title.rendered}</h3></a>
+            </div>
+            `;
+            if (i === 7) {
+                break
+            }
         }
-    },
-    {
-        breakpoint: 600,
-        settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-        }
-    },
-    {
-        breakpoint: 480,
-        settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-        }
+    } catch (error) {
+        document.querySelector('.alert').innerHTML += thisIsAnAlert(
+            'An error has occured',
+            'danger'
+        );
+        console.log(error);
+    } finally {
+        setTimeout( function() {
+            document.querySelector('.alert').innerHTML = '';
+        }, 3000);
     }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
-    ]
-});
+};
+getPosts();

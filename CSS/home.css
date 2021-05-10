@@ -25,8 +25,8 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  column-gap: 10rem;
-  padding-left: 1rem;
+  justify-content: space-between;
+  padding: 0 1rem 0 1rem;
   height: 71px;
   background-color: white;
   color: black;
@@ -37,19 +37,46 @@ nav {
 }
 
 .logo {
+  width: fit-content;
   cursor: pointer;
 }
 
+.search {
+  width: 35%;
+  position: relative;
+}
+
+#bar {
+  width: 93.5%;
+  height: 2rem;
+  background-color: whitesmoke;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 0 10px 0 10px;
+  font-weight: 500;
+}
+
+.search i {
+  height: 2rem;
+  padding: 8px 8px 11px 8px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  width: fit-content;
+  position: absolute;
+}
+
 .menu {
-  text-align: center;
-  font-family: "space mono", monospace;
+  width: fit-content;
+  font-family: "roboto";
 }
 
 nav ul li a {
   color: black;
-  font-size: 20px;
+  font-size: 1.3rem;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   padding: 20px 20px 20px 20px;
 }
 
@@ -78,7 +105,7 @@ ul li a:hover {
 /* ----------------------------------------------------- Main -------------------------------------------- */
 main {
   grid-area: main;
-  width: 90%;
+  width: 95%;
   margin: auto;
 }
 
@@ -95,14 +122,13 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0rem 1rem 0rem 1rem;
   row-gap: 2rem;
 }
 
 .top-left-content h1 {
   font-family: "roboto";
   font-weight: 900;
-  font-size: 2.3rem;
+  font-size: 2rem;
 }
 
 .title {
@@ -110,18 +136,17 @@ main {
   color: whitesmoke;
   padding: 3px 1px 2px 10px;
   border-radius: 1.5px;
+  margin-right: 5px;
 }
 .top-left-content p {
   font-family: "roboto";
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 300;
-  text-align: center;
 }
 
 .top-left-content button {
-  margin-top: rem;
   height: 50px;
-  width: 50%;
+  width: 80%;
   text-transform: uppercase;
   font-size: 1.2rem;
   background-color: black;
@@ -144,7 +169,7 @@ main {
 }
 
 .top-right-content img {
-  height: 600px;
+  height: 545px;
 }
 
 .bottom-content {
@@ -154,7 +179,6 @@ main {
     "bottom-lower-content";
   height: 300px;
   margin-top: 5rem;
-  border: solid red 1px;
 }
 
 .bottom-top-content {
@@ -174,6 +198,11 @@ main {
 
 .bottom-lower-content {
   grid-area: bottom-lower-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  column-gap: 1rem;
   border: solid black 1px;
 }
 
@@ -237,12 +266,17 @@ footer {
     color: grey;
   }
 
+  .search {
+    margin-left: 2rem;
+    width: 45%;
+  }
+
   .menu {
     position: absolute;
     display: none;
     top: 4.55rem;
     width: 35%;
-    height: 202px;
+    height: 181.5px;
     background: white;
     right: 0;
     text-align: center;
@@ -278,7 +312,6 @@ footer {
     color: black;
     font-size: 17px;
     text-transform: uppercase;
-    font-weight: 700;
     padding: 12px 0px 12px 0px;
     border-bottom: solid 1px black;
   }
@@ -335,12 +368,16 @@ footer {
     color: grey;
   }
 
+  .search {
+    display: none;
+  }
+
   .menu {
     position: absolute;
     display: none;
     top: 4.55rem;
     width: 100%;
-    height: 200px;
+    height: 178.7px;
     background: white;
     right: 0;
     text-align: center;
@@ -377,7 +414,6 @@ footer {
     border-bottom: none;
     font-size: 17px;
     text-transform: uppercase;
-    font-weight: 700;
     padding: 12px 0px 12px 0px;
   }
 
