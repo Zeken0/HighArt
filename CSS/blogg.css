@@ -55,6 +55,7 @@ nav {
   font-size: 1rem;
   padding: 0 10px 0 10px;
   font-weight: 500;
+  border-radius: 3px 0 3px 3px;
 }
 
 .search i {
@@ -65,6 +66,7 @@ nav {
   cursor: pointer;
   width: fit-content;
   position: absolute;
+  border-radius: 3px 3px 3px 0;
 }
 
 .menu {
@@ -106,6 +108,7 @@ ul li a:hover {
 main {
   grid-area: main;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 95%;
@@ -118,43 +121,60 @@ main {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin: 0rem 0rem 3rem 0rem;
-  width: 100%;
-  border: solid red 1px;
+}
+
+.container .content {
+  text-align: center;
+  border-bottom: solid 1px gainsboro;
+  padding-bottom: 1rem;
 }
 
 .container a h2 {
   color: #000;
-  border: solid red 1px;
 }
 
 .container p {
   font-weight: 300;
   line-height: 1.6;
   letter-spacing: 0.01rem;
-  font-size: 1.14rem;
+  font-size: 1rem;
   width: 77%;
   margin: auto;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  border: solid red 1px;
+  text-align: start;
 }
 
 h2 {
+  display: inline-block;
   font-size: 2rem;
   letter-spacing: 0.01rem;
   font-weight: 500;
   margin: 5rem 0 1.5rem 0;
-  border-bottom: solid 1px lightgray;
-  border-width: 0.2rem;
-  width: fit-content;
-  border: solid red 1px;
+  border-bottom: solid 1.5px gainsboro;
 }
 
 h2:hover {
   font-size: 2.02rem;
+}
+
+main .btn {
+  margin-bottom: 3rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  border: none;
+}
+
+main .btn:hover {
+  background-color: rgba(43, 40, 40, 0.918);
+  color: white;
+  font-size: 1.25rem;
 }
 
 /* ----------------------------------------------------- Footer -------------------------------------------- */
