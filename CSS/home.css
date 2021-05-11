@@ -144,7 +144,7 @@ main {
   font-weight: 300;
 }
 
-.top-left-content button {
+.top-left-content form button {
   height: 50px;
   width: 80%;
   text-transform: uppercase;
