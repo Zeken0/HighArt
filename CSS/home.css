@@ -208,6 +208,10 @@ main {
   border: solid black 1px;
 }
 
+.bottom-lower-content a h3 {
+  color: black;
+}
+
 /* ----------------------------------------------------- Footer -------------------------------------------- */
 footer {
   margin-top: 3rem;
@@ -355,6 +359,11 @@ footer {
   .top-right-content img {
     height: 450px;
   }
+
+  .bottom-content {
+    width: 95%;
+    margin: auto;
+  }
 }
 
 /* ----------------------------------------------------- Mobile -------------------------------------------- */
@@ -450,6 +459,11 @@ footer {
 
   .top-right-content img {
     height: 225px;
+  }
+
+  .bottom-content {
+    width: 95%;
+    margin: auto;
   }
 
   .footer-items {

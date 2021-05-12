@@ -124,17 +124,30 @@ main {
   margin: 0rem 0rem 3rem 0rem;
 }
 
-.container .content {
+.containerTwo {
+  display: none;
+  flex-direction: column;
+  margin: 0rem 0rem 3rem 0rem;
+}
+
+.containerTwoToggle {
+  display: flex;
+}
+
+.container .content,
+.containerTwo .content {
   text-align: center;
   border-bottom: solid 1px gainsboro;
   padding-bottom: 1rem;
 }
 
-.container a h2 {
+.container a h2,
+.containerTwo a h2 {
   color: #000;
 }
 
-.container p {
+.container p,
+.containerTwo p {
   font-weight: 300;
   line-height: 1.6;
   letter-spacing: 0.01rem;
@@ -152,7 +165,8 @@ h2 {
   letter-spacing: 0.01rem;
   font-weight: 500;
   margin: 5rem 0 1.5rem 0;
-  border-bottom: solid 1.5px gainsboro;
+  border-bottom: solid 1.5px lightgrey;
+  border-width: 0.2rem;
 }
 
 h2:hover {
