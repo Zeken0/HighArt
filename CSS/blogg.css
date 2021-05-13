@@ -126,8 +126,14 @@ main {
 
 .containerTwo {
   display: none;
-  flex-direction: column;
+  flex-direction: column-reverse;
   margin: 0rem 0rem 3rem 0rem;
+}
+
+.container img,
+.containerTwo img {
+  height: 500px;
+  width: fit-content;
 }
 
 .containerTwoToggle {
@@ -300,6 +306,12 @@ footer {
   ul li .active {
     transition: 0s;
   }
+
+  .container img,
+  .containerTwo img {
+    height: 500px;
+    width: 555px;
+  }
 }
 
 /* ----------------------------------------------------- Mobile -------------------------------------------- */
@@ -361,7 +373,14 @@ footer {
     padding: 12px 0px 12px 0px;
   }
 
-  .container p {
+  .container img,
+  .containerTwo img {
+    height: 350px;
+    width: 360px;
+  }
+
+  .container p,
+  .containerTwo p {
     width: 90%;
   }
 

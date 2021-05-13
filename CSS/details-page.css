@@ -112,7 +112,6 @@ main {
   justify-content: center;
   align-items: center;
   width: 95%;
-  height: 100vh;
   margin: auto;
   font-family: "roboto";
   color: #000;
@@ -257,10 +256,6 @@ footer {
   ul li .active {
     transition: 0s;
   }
-
-  main {
-    height: 100ch;
-  }
 }
 
 /* ----------------------------------------------------- Mobile -------------------------------------------- */
@@ -322,13 +317,14 @@ footer {
     padding: 12px 0px 12px 0px;
   }
 
-  main {
-    width: 95%;
-    height: 1400px;
-  }
-
   .container p {
     width: 90%;
+  }
+
+  .container img,
+  .containerTwo img {
+    height: 360px;
+    width: 360px;
   }
 
   .footer-items {

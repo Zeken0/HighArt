@@ -1,11 +1,9 @@
-
 let toggled = true;
 function toggleBtn(){
-    
-        document.querySelector(".containerTwo").classList.toggle("containerTwoToggle");
-        document.querySelector(".btn").innerHTML = `
-        Show Less
-        `;
+            document.querySelector(".containerTwo").classList.toggle("containerTwoToggle");
+            document.querySelector(".btn").innerHTML = `
+            Show Less
+            `;
 }
 
 async function getPosts() {
@@ -24,7 +22,7 @@ async function getPosts() {
                 <p>
                     ${result[i].content.rendered}
                 </p>
-                <img src="${result[i].slug}" alt="">
+                <img src="${result[i]}" alt=".">
                 <p>
                     ${result[i].excerpt.rendered}
                 </p>
@@ -41,7 +39,7 @@ async function getPosts() {
                 <p>
                     ${result[i].content.rendered}
                 </p>
-                <img src="${result[i].slug}" alt="">
+                <img src="${result[i]}" alt=".">
                 <p>
                     ${result[i].excerpt.rendered}
                 </p>
