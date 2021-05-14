@@ -192,6 +192,7 @@ main {
   width: fit-content;
   border-bottom: solid black;
   border-radius: 3px;
+  margin-bottom: 1rem;
 }
 
 .bottom-top-content h2 {
@@ -201,67 +202,52 @@ main {
 }
 
 .bottom-lower-content {
-  margin-top: 1rem;
   grid-area: bottom-lower-content;
 }
 
 .carousel {
+  max-width: 1180px;
   overflow: hidden;
-  max-width: 1200px;
-  width: 100%;
-  position: relative;
-  align-items: center;
-  column-gap: 1rem;
-  display: flex;
-  border: solid black 1px;
 }
 
-.carousel a h3 {
-  color: white;
-  background-color: black;
+.carousel .carousel__items a h3 {
+  font-family: "roboto";
+  font-weight: 600;
   text-align: center;
   padding: 0.5rem 0;
   border: none;
-}
-.carousel .carousel__item,
-.carousel .carousel__item--hidden {
-  display: none;
-}
-
-.carousel__item img {
-  height: 287.4px;
-  width: 287.4px;
-}
-
-.carousel .carousel__item--visible {
-  display: block;
-}
-
-.carousel .carousel__actions {
-  position: absolute;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.carousel .carousel__actions button {
-  border: none;
-  font-size: 1.7rem;
-  background-color: unset;
   color: white;
-  cursor: pointer;
+  background-color: black;
+  width: 97.2%;
 }
 
-.carousel__actions button:hover {
-  color: gainsboro;
-}
-.carousel .carousel__actions button .fa-chevron-circle-left {
-  margin-left: 0.5rem;
+.carousel a h3:hover {
+  font-size: 1.2rem;
 }
 
-.carousel .carousel__actions button .fa-chevron-circle-right {
-  margin-right: 0.5rem;
+.carousel__items img {
+  height: 287px;
+  width: 287px;
 }
+
+.slick-prev {
+  position: absolute;
+  top: 45%;
+  bottom: auto;
+  left: 0.5rem;
+  z-index: 100;
+  font-weight: bolder;
+}
+
+.slick-next {
+  position: absolute;
+  top: 45%;
+  bottom: auto;
+  right: 1rem;
+  z-index: 100;
+  font-weight: bolder;
+}
+
 /* ----------------------------------------------------- Footer -------------------------------------------- */
 footer {
   margin-top: 3rem;
@@ -413,16 +399,24 @@ footer {
   .bottom-content {
     width: 95%;
     margin: auto;
+    margin-top: 3rem;
+  }
+
+  .bottom-top-content {
+    margin-bottom: 1rem;
   }
 
   .carousel {
     max-width: 750px;
-    width: 100%;
   }
 
-  .carousel__item img {
-    height: 366px;
-    width: 366px;
+  .carousel .carousel__items a h3 {
+    width: 96%;
+  }
+
+  .carousel__items img {
+    height: 230px;
+    width: 240px;
   }
 }
 
@@ -540,10 +534,13 @@ footer {
 
   .carousel {
     max-width: 350px;
+  }
+
+  .carousel .carousel__items a h3 {
     width: 100%;
   }
 
-  .carousel__item img {
+  .carousel__items img {
     height: 350px;
     width: 350px;
   }
