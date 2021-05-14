@@ -85,10 +85,12 @@ nav ul li a {
 
 ul li .active {
   border-bottom: solid black;
+  border-radius: 3px;
 }
 
 ul li a:hover {
   border-bottom: solid black;
+  border-radius: 3px;
   transition: 0.2s;
 }
 
