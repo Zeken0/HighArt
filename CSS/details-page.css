@@ -144,7 +144,9 @@ h2 {
   font-weight: 500;
   margin: 5rem 0 1.5rem 0;
   text-align: center;
-  border-bottom: solid 1.5px gainsboro;
+  border-bottom: solid 1.5px lightgray;
+  border-width: 0.2rem;
+  border-radius: 3px;
 }
 
 /* ----------------------------------------------------- Footer -------------------------------------------- */
