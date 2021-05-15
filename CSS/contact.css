@@ -292,11 +292,13 @@ footer {
   ul li .active {
     color: white;
     background-color: black;
+    border-radius: unset;
   }
 
   ul li a:hover {
     color: whitesmoke;
     background-color: black;
+    border-radius: unset;
   }
 
   .menu.togglecls {
