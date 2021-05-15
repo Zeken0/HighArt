@@ -523,6 +523,10 @@ footer {
     font-size: 1rem;
   }
 
+  .top-left-content form {
+    width: 330px;
+  }
+
   .top-left-content button {
     margin-bottom: 1.5rem;
     width: 100%;
