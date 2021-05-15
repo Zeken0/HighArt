@@ -426,6 +426,10 @@ footer {
     height: 260px;
   }
 
+  footer {
+    height: 80px;
+  }
+
   .footer-items {
     display: flex;
     font-size: 2rem;
