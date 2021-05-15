@@ -221,6 +221,7 @@ main {
   color: white;
   background-color: black;
   width: 97.2%;
+  border-radius: 0px 0px 3px 3px;
 }
 
 .carousel a h3:hover {
@@ -230,6 +231,13 @@ main {
 .carousel__items img {
   height: 287px;
   width: 287px;
+  border-radius: 3px 3px 0 0;
+  cursor: pointer;
+}
+
+.carousel__items img:hover {
+  height: 289px;
+  opacity: 97%;
 }
 
 .slick-prev {
