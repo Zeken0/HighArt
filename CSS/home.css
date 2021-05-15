@@ -113,6 +113,18 @@ main {
   margin: auto;
 }
 
+.alert {
+  width: 100%;
+}
+
+.danger {
+  background-color: rgb(255 124 124);
+  color: red;
+  border: solid 1px red;
+  padding: 20px;
+  transition: 2s;
+}
+
 .top-content {
   display: grid;
   grid-template-areas: "top-left-content top-right-content";
@@ -210,6 +222,7 @@ main {
 
 .bottom-lower-content {
   grid-area: bottom-lower-content;
+  margin-bottom: 1.5rem;
 }
 
 .carousel {

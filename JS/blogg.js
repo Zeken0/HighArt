@@ -6,6 +6,10 @@ function toggleBtn(){
             `;
 }
 
+// document.querySelector('.up-btn').onclick = function (e) {
+//     e.preventDefault();
+// }
+
 async function getPosts() {
     try {
         const repsonse = await fetch('https://api.a1tech.store//wp-json/wp/v2/posts');

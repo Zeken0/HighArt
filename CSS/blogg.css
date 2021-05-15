@@ -4,6 +4,7 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -109,6 +110,7 @@ ul li a:hover {
 /* ----------------------------------------------------- Main -------------------------------------------- */
 main {
   grid-area: main;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -198,6 +200,24 @@ main .btn:hover {
   background-color: rgba(43, 40, 40, 0.918);
   color: white;
   font-size: 1.25rem;
+}
+
+main .up-btn {
+  position: absolute;
+  bottom: 2.86rem;
+  right: 0;
+  font-size: 2.5rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+main .up-btn:hover {
+  margin-bottom: 0.2rem;
+}
+
+.up-btn a {
+  color: black;
 }
 
 /* ----------------------------------------------------- Footer -------------------------------------------- */
