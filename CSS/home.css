@@ -217,6 +217,7 @@ main {
   font-weight: 600;
   border-bottom: solid black;
   border-radius: 3px;
+  margin-left: 0.74rem;
 }
 
 .bottom-lower-content {
@@ -233,7 +234,7 @@ main {
   justify-content: center;
   align-items: center;
   height: 326px;
-  width: 100%;
+  width: 98.4%;
   z-index: 1000;
   background-color: white;
   font-size: 2rem;
@@ -259,7 +260,7 @@ main {
   border: none;
   color: white;
   background-color: black;
-  width: 97.2%;
+  width: 99.5%;
   border-radius: 0px 0px 3px 3px;
 }
 
@@ -269,7 +270,7 @@ main {
 
 .carousel__items img {
   height: 287px;
-  width: 287px;
+  width: 293.5px;
   border-radius: 3px 3px 0 0;
   cursor: pointer;
 }
