@@ -200,7 +200,6 @@ main {
     "bottom-lower-content";
   height: fit-content;
   margin-top: 5rem;
-  justify-content: center;
 }
 
 .bottom-top-content {
@@ -208,9 +207,7 @@ main {
   display: flex;
   justify-content: start;
   align-items: center;
-  width: fit-content;
-  border-bottom: solid black;
-  border-radius: 3px;
+  width: 100%;
   margin-bottom: 1rem;
 }
 
@@ -218,11 +215,35 @@ main {
   font-family: "roboto";
   font-size: 2rem;
   font-weight: 600;
+  border-bottom: solid black;
+  border-radius: 3px;
 }
 
 .bottom-lower-content {
   grid-area: bottom-lower-content;
+  display: flex;
+  justify-content: center;
   margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.loader {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 326px;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  font-size: 2rem;
+  border: solid black 1px;
+  display: none;
+}
+
+.loader img {
+  height: 150px;
+  color: black;
 }
 
 .carousel {
@@ -427,7 +448,7 @@ footer {
   }
 
   .bottom-content {
-    width: 95%;
+    width: 100%;
     margin: auto;
     margin-top: 3rem;
   }
@@ -436,17 +457,25 @@ footer {
     margin-bottom: 1rem;
   }
 
+  .bottom-top-content h2 {
+    margin-left: 1rem;
+  }
+
+  .loader {
+    width: 96.5%;
+  }
+
   .carousel {
-    max-width: 750px;
+    max-width: 740px;
   }
 
   .carousel .carousel__items a h3 {
-    width: 96%;
+    width: 99.1%;
   }
 
   .carousel__items img {
-    height: 230px;
-    width: 240px;
+    height: 245px;
+    width: 245px;
   }
 }
 
@@ -550,7 +579,7 @@ footer {
   }
 
   .bottom-content {
-    width: 95%;
+    width: 100%;
     margin: auto;
     margin-top: 2.67rem;
   }
@@ -564,6 +593,12 @@ footer {
   .bottom-top-content h2 {
     border-bottom: solid black;
     border-radius: 3px;
+    margin-left: 0;
+  }
+
+  .loader {
+    height: 390px;
+    width: 98%;
   }
 
   .carousel {

@@ -144,7 +144,7 @@ main {
 }
 
 .left-content form {
-  width: 300px;
+  width: 350px;
 }
 
 .left-content form button {
@@ -387,6 +387,10 @@ footer {
 
   .left-content button {
     width: 100%;
+  }
+
+  .left-content form {
+    width: 328px;
   }
 
   .right-content img {
