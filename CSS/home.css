@@ -442,6 +442,10 @@ footer {
     margin-top: 3rem;
   }
 
+  .bottom-title {
+    width: 740px;
+  }
+
   .slick-next {
     right: 0.6rem;
   }
@@ -573,6 +577,12 @@ footer {
     height: fit-content;
     margin: auto;
     margin-top: 2.67rem;
+  }
+
+  .bottom-title {
+    width: 350px;
+    display: flex;
+    justify-content: center;
   }
 
   .slick-next {

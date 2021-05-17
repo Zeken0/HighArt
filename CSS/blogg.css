@@ -236,7 +236,7 @@ main .up-btn {
 
 main .up-btn:hover,
 main .up-btn:focus {
-  background-color: #333;
+  background-color: black;
   color: white;
 }
 
