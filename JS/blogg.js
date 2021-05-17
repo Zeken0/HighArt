@@ -1,10 +1,18 @@
 /* ----------------------------------------------- ShowMoreButton ----------------------------------------------- */
-let toggled = true;
-function toggleBtn(){
-    document.querySelector(".containerTwo").classList.toggle("containerTwoToggle");
-    document.querySelector(".btn").innerHTML = `
-    Show Less
-    `;
+const showMoreBtn = document.querySelector('.btn');
+const secondContent = document.querySelector('.containerTwo');
+
+showMoreBtn.onclick = function toggleBtn() {
+    secondContent.classList.toggle("containerTwoToggle");
+    if (secondContent.classList.contains('containerTwoToggle')) {
+        showMoreBtn.innerHTML =`
+        Show Less
+        `;
+    } else {
+        showMoreBtn.innerHTML =`
+        Show More
+        `;
+    }
 }
 /* ----------------------------------------------- /ShowMoreButton ----------------------------------------------- */
 async function getPosts() {

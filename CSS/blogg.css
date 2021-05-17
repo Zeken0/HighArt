@@ -200,15 +200,17 @@ h2:hover {
 }
 
 main .btn {
+  font-family: "roboto";
+  width: 20%;
+  height: 50px;
   margin-bottom: 3rem;
-  font-weight: 600;
   cursor: pointer;
   background-color: black;
   color: white;
-  padding: 10px;
   border-radius: 3px;
   font-size: 1.2rem;
   border: none;
+  text-transform: uppercase;
 }
 
 main .btn:hover {
@@ -366,6 +368,10 @@ footer {
     width: 555px;
   }
 
+  main .btn {
+    width: 45%;
+  }
+
   main .up-btn {
     font-size: 22px;
     width: 40px;
@@ -443,6 +449,10 @@ footer {
   .container p,
   .containerTwo p {
     width: 90%;
+  }
+
+  main .btn {
+    width: 100%;
   }
 
   main .up-btn {
