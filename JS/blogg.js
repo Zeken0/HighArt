@@ -75,6 +75,14 @@ async function getPosts() {
             window.scrollTo(0,0);
         }
         /* ---------------------------------------- /BackToTopButton ------------------------------------------- */
+
+         /* ------------------------------------------ HideLoader ---------------------------------------------- */
+        const loaderContent = document.querySelector('.loader')
+
+        setTimeout( function() {
+            loaderContent.style.display = "none";
+        },3000);
+         /* ----------------------------------------- /HideLoader ---------------------------------------------- */
     } catch (error) {
         document.querySelector('.alert').innerHTML += thisIsAnAlert(
             'An error has occured',

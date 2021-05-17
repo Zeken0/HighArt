@@ -55,7 +55,7 @@ nav {
   font-size: 1rem;
   padding: 0 10px 0 10px;
   font-weight: 500;
-  border-radius: 3px 0 3px 3px;
+  border-radius: 3px 0 0 3px;
 }
 
 .search i {
@@ -66,7 +66,7 @@ nav {
   cursor: pointer;
   width: fit-content;
   position: absolute;
-  border-radius: 3px 3px 3px 0;
+  border-radius: 0px 3px 3px 0;
 }
 
 .menu {
@@ -198,7 +198,7 @@ main {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
-  height: fit-content;
+  height: 395px;
   margin-top: 5rem;
 }
 
@@ -273,7 +273,7 @@ main {
   position: absolute;
   top: 45%;
   bottom: auto;
-  right: 1rem;
+  right: 0.7rem;
   z-index: 100;
   font-weight: bolder;
 }
@@ -430,6 +430,7 @@ footer {
   }
 
   .bottom-content {
+    height: 341px;
     width: 95%;
     margin: auto;
     margin-top: 3rem;
@@ -563,6 +564,7 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: fit-content;
     margin: auto;
     margin-top: 2.67rem;
   }
