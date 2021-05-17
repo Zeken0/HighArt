@@ -159,7 +159,7 @@ main {
 .top-left-content p {
   font-family: "roboto";
   font-size: 1.3rem;
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 .top-left-content form {
