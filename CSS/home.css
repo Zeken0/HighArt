@@ -197,9 +197,15 @@ main {
 .bottom-content {
   display: flex;
   flex-direction: column;
+  justify-content: start;
+  align-items: center;
   row-gap: 1rem;
   height: 395px;
   margin-top: 5rem;
+}
+
+.bottom-title {
+  width: 1199px;
 }
 
 .bottom-content h2 {
@@ -217,7 +223,7 @@ main {
   justify-content: center;
   align-items: center;
   height: 345px;
-  width: 1200px;
+  width: 100%;
   z-index: 1000;
   background-color: white;
   font-size: 2rem;
@@ -431,7 +437,7 @@ footer {
 
   .bottom-content {
     height: 341px;
-    width: 95%;
+    width: 97%;
     margin: auto;
     margin-top: 3rem;
   }
@@ -451,7 +457,7 @@ footer {
   }
 
   .carousel .carousel__items a h3 {
-    width: 99.4%;
+    width: 97.9%;
   }
 
   .carousel__items img {

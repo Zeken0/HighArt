@@ -81,7 +81,7 @@ async function getPosts() {
 
         setTimeout( function() {
             loaderContent.style.display = "none";
-        },3000);
+        });
          /* ----------------------------------------- /HideLoader ---------------------------------------------- */
     } catch (error) {
         document.querySelector('.alert').innerHTML += thisIsAnAlert(

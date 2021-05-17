@@ -12,18 +12,24 @@ async function getPosts(postId) {
         const repsonse = await fetch('https://api.a1tech.store//wp-json/wp/v2/posts/' + postId);
         const result = await repsonse.json();
 
-            document.title +=`
-            ${result.title.rendered}
-            `;
-            
-            document.querySelector('.container').innerHTML =`
-            <div class="content">
-                <h2>${result.title.rendered}</h2>
-                <p>${result.content.rendered}</p>
-                <p>${result.excerpt.rendered}</p>
-            </div>
-            `;
+        document.title +=`
+        ${result.title.rendered}
+        `;
+        
+        document.querySelector('.container').innerHTML =`
+        <div class="content">
+            <h2>${result.title.rendered}</h2>
+            <p>${result.content.rendered}</p>
+            <p>${result.excerpt.rendered}</p>
+        </div>
+        `;
+        /* ------------------------------------------ HideLoader ---------------------------------------------- */
+        const loaderContent = document.querySelector('.loader')
 
+        setTimeout( function() {
+            loaderContent.style.display = "none";
+        });
+        /* ----------------------------------------- /HideLoader ---------------------------------------------- */
     } catch (error) {
         document.querySelector('.alert').innerHTML += thisIsAnAlert(
             'An error has occured',
