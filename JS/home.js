@@ -4,7 +4,6 @@ async function getPosts() {
         const result = await repsonse.json();  
         
         for (let i = 0; i < result.length; i++) {
-
             document.querySelector('.carousel').innerHTML += `
             <div class="carousel__items">
                 <img src="/img/TrapSoul.jpg" alt="album cover">
@@ -56,7 +55,15 @@ async function getPosts() {
             filtered = false;
             }
         });
-        /* ---------------------------------------- Carousel slider --------------------------------------------- */
+        /* ---------------------------------------- Carousel slider -------------------------------------------- */
+
+         /* ---------------------------------------- HideLoader -------------------------------------------- */
+        const loaderContent = document.querySelector('.loader')
+
+        setTimeout( function() {
+            loaderContent.style.display = "none";
+        },3000);
+        /* ---------------------------------------- /HideLoader ------------------------------------------- */
     } catch (error) {
         document.querySelector('.alert').innerHTML += thisIsAnAlert(
             'An error has occured',

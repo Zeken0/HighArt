@@ -74,7 +74,7 @@ async function getPosts() {
         function backToTop() {
             window.scrollTo(0,0);
         }
-        /* ---------------------------------------- /BackToTopButton -------------------------------------------- */
+        /* ---------------------------------------- /BackToTopButton ------------------------------------------- */
     } catch (error) {
         document.querySelector('.alert').innerHTML += thisIsAnAlert(
             'An error has occured',
