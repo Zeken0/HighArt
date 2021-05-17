@@ -1,15 +1,12 @@
+/* ----------------------------------------------- ShowMoreButton ----------------------------------------------- */
 let toggled = true;
 function toggleBtn(){
-            document.querySelector(".containerTwo").classList.toggle("containerTwoToggle");
-            document.querySelector(".btn").innerHTML = `
-            Show Less
-            `;
+    document.querySelector(".containerTwo").classList.toggle("containerTwoToggle");
+    document.querySelector(".btn").innerHTML = `
+    Show Less
+    `;
 }
-
-// document.querySelector('.up-btn').onclick = function (e) {
-//     e.preventDefault();
-// }
-
+/* ----------------------------------------------- /ShowMoreButton ----------------------------------------------- */
 async function getPosts() {
     try {
         const repsonse = await fetch('https://api.a1tech.store//wp-json/wp/v2/posts');
@@ -50,7 +47,35 @@ async function getPosts() {
             </div>
             `;
         }
-        } catch (error) {
+        /* ---------------------------------------- BackToTopButton --------------------------------------------- */
+        
+        const backToTopButton = document.querySelector('.up-btn');
+        
+        window.addEventListener('scroll', scrollFunction);
+
+        function scrollFunction() {
+            if (window.pageYOffset > 300) {
+                if (!backToTopButton.classList.contains(".show")) {
+                    backToTopButton.classList.remove(".hide")
+                    backToTopButton.classList.add(".show")
+                    backToTopButton.style.display = "block";
+                }
+            } else {
+                if (backToTopButton.classList.contains(".show")) {
+                    backToTopButton.classList.remove(".show")
+                    backToTopButton.classList.add(".hide")
+                    backToTopButton.style.display = "none";
+                }
+            }
+        }
+
+        backToTopButton.addEventListener('click', backToTop);
+
+        function backToTop() {
+            window.scrollTo(0,0);
+        }
+        /* ---------------------------------------- /BackToTopButton -------------------------------------------- */
+    } catch (error) {
         document.querySelector('.alert').innerHTML += thisIsAnAlert(
             'An error has occured',
             'danger'
@@ -63,8 +88,3 @@ async function getPosts() {
     }
 };
 getPosts();
-
-// function toggleBtn(){
-//     let addContentTwo = document.querySelector(".containerTwo");
-//     addContentTwo.classList.toggle("containerTwoToggle")
-// }

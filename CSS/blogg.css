@@ -197,27 +197,40 @@ main .btn {
 }
 
 main .btn:hover {
-  background-color: rgba(43, 40, 40, 0.918);
-  color: white;
-  font-size: 1.25rem;
+  background-color: #333;
 }
 
 main .up-btn {
-  position: absolute;
-  bottom: 2.86rem;
-  right: 0;
-  font-size: 2.5rem;
-  border: none;
-  background-color: transparent;
+  display: none;
+  position: fixed;
+  bottom: 1rem;
+  right: 20px;
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  color: #333;
   cursor: pointer;
+  outline: none;
+  border: 3px solid #333;
+  border-radius: 50%;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color;
 }
 
-main .up-btn:hover {
-  margin-bottom: 0.2rem;
+main .up-btn:hover,
+main .up-btn:focus {
+  background-color: #333;
+  color: white;
 }
 
-.up-btn a {
-  color: black;
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
 }
 
 /* ----------------------------------------------------- Footer -------------------------------------------- */
@@ -337,6 +350,14 @@ footer {
     height: 500px;
     width: 555px;
   }
+
+  main .up-btn {
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    bottom: 15px;
+    right: 15px;
+  }
 }
 
 /* ----------------------------------------------------- Mobile -------------------------------------------- */
@@ -410,13 +431,11 @@ footer {
   }
 
   main .up-btn {
-    position: absolute;
-    bottom: 2.86rem;
-    right: 0.5rem;
-    font-size: 2.5rem;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
+    font-size: 18px;
+    width: 32px;
+    height: 32px;
+    bottom: 6px;
+    right: 6px;
   }
 
   footer {

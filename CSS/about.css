@@ -161,9 +161,9 @@ main {
 }
 
 .left-content button:hover {
-  background-color: rgba(43, 40, 40, 0.918);
+  background-color: #333;
   color: white;
-  font-size: 1.25rem;
+  font-size: 1.22rem;
 }
 
 .right-content {

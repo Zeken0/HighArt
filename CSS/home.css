@@ -155,10 +155,12 @@ main {
   border-radius: 1.5px;
   margin-right: 4px;
 }
+
 .top-left-content p {
   font-family: "roboto";
   font-size: 1.3rem;
-  font-weight: 300;
+  color: gray;
+  font-weight: lighter;
 }
 
 .top-left-content form {
@@ -178,9 +180,9 @@ main {
 }
 
 .top-left-content button:hover {
-  background-color: rgba(43, 40, 40, 0.918);
+  background-color: #333;
   color: white;
-  font-size: 1.25rem;
+  font-size: 1.22rem;
 }
 
 .top-right-content {
@@ -194,38 +196,20 @@ main {
 }
 
 .bottom-content {
-  display: grid;
-  grid-template-areas:
-    "bottom-top-content"
-    "bottom-lower-content";
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
   height: fit-content;
   margin-top: 5rem;
 }
 
-.bottom-top-content {
-  grid-area: bottom-top-content;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
-.bottom-top-content h2 {
+.bottom-content h2 {
   font-family: "roboto";
   font-size: 2rem;
   font-weight: 600;
   border-bottom: solid black;
   border-radius: 3px;
-  margin-left: 0.74rem;
-}
-
-.bottom-lower-content {
-  grid-area: bottom-lower-content;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1.5rem;
-  position: relative;
+  width: fit-content;
 }
 
 .loader {
@@ -233,22 +217,20 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 326px;
-  width: 98.4%;
+  height: 345px;
+  width: 1200px;
   z-index: 1000;
   background-color: white;
   font-size: 2rem;
-  border: solid black 1px;
-  display: none;
+  margin-top: 3rem;
 }
 
 .loader img {
-  height: 150px;
-  color: black;
+  height: 120px;
 }
 
 .carousel {
-  max-width: 1180px;
+  max-width: 1199px;
   overflow: hidden;
 }
 
@@ -260,7 +242,7 @@ main {
   border: none;
   color: white;
   background-color: black;
-  width: 99.5%;
+  width: 98.35%;
   border-radius: 0px 0px 3px 3px;
 }
 
@@ -269,8 +251,8 @@ main {
 }
 
 .carousel__items img {
-  height: 287px;
-  width: 293.5px;
+  height: 295px;
+  width: 295px;
   border-radius: 3px 3px 0 0;
   cursor: pointer;
 }
@@ -449,21 +431,19 @@ footer {
   }
 
   .bottom-content {
-    width: 100%;
+    width: 95%;
     margin: auto;
     margin-top: 3rem;
   }
 
-  .bottom-top-content {
-    margin-bottom: 1rem;
-  }
-
-  .bottom-top-content h2 {
-    margin-left: 1rem;
+  .slick-next {
+    right: 0.6rem;
   }
 
   .loader {
     width: 96.5%;
+    margin-left: -0.5rem;
+    height: 300px;
   }
 
   .carousel {
@@ -471,12 +451,12 @@ footer {
   }
 
   .carousel .carousel__items a h3 {
-    width: 99.1%;
+    width: 99.4%;
   }
 
   .carousel__items img {
-    height: 245px;
-    width: 245px;
+    height: 240px;
+    width: 241.7px;
   }
 }
 
@@ -580,26 +560,25 @@ footer {
   }
 
   .bottom-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     margin: auto;
     margin-top: 2.67rem;
   }
 
-  .bottom-top-content {
-    border: none;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .bottom-top-content h2 {
-    border-bottom: solid black;
-    border-radius: 3px;
-    margin-left: 0;
+  .slick-next {
+    right: 0.5rem;
   }
 
   .loader {
-    height: 390px;
-    width: 98%;
+    height: 398px;
+    width: 100%;
+  }
+
+  .loader img {
+    height: 100px;
   }
 
   .carousel {
