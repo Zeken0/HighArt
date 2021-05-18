@@ -122,6 +122,18 @@ main {
   color: #000;
 }
 
+.alert {
+  width: 100%;
+}
+
+.danger {
+  background-color: rgb(255 124 124);
+  color: red;
+  border: solid 1px red;
+  padding: 20px;
+  transition: 2s;
+}
+
 .loader {
   display: flex;
   justify-content: center;

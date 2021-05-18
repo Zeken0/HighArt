@@ -1,20 +1,22 @@
 async function getPosts() {
     try {
-        const repsonse = await fetch('https://api.a1tech.store//wp-json/wp/v2/posts');
+        const repsonse = await fetch('https://api.a1tech.store//wp-json/wp/v2/posts?_embed');
         const result = await repsonse.json();  
         
         for (let i = 0; i < result.length; i++) {
             document.querySelector('.carousel').innerHTML += `
             <div class="carousel__items">
-                <img src="/img/TrapSoul.jpg" alt="album cover">
                 <a href="/details-page.html?id=${result[i].id}">
-                    <h3>${result[i].title.rendered}</h3>
+                    <img src="${result[i]._embedded['wp:featuredmedia'][0].source_url}" alt="album cover"/>
+                    <h3>
+                        ${result[i].title.rendered}
+                    </h3>
                 </a>
             </div>
             `;
-            if (i === 5) {
-                break
-            }
+            // if (i === 6) {
+            //     break
+            // }
         };
         /* ---------------------------------------- Carousel slider --------------------------------------------- */
         $('.carousel').slick({

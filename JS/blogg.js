@@ -17,7 +17,7 @@ showMoreBtn.onclick = function toggleBtn() {
 /* ----------------------------------------------- /ShowMoreButton ----------------------------------------------- */
 async function getPosts() {
     try {
-        const repsonse = await fetch('https://api.a1tech.store//wp-json/wp/v2/posts');
+        const repsonse = await fetch('https://api.a1tech.store//wp-json/wp/v2/posts?_embed');
         const result = await repsonse.json(); 
         
         for (let i = 0; i < result.length; i++) {
@@ -31,13 +31,13 @@ async function getPosts() {
                 <p>
                     ${result[i].content.rendered}
                 </p>
-                <img src="${result[i]}" alt=".">
+                <img src="${result[i]._embedded['wp:featuredmedia'][0].source_url}"/>
                 <p>
                     ${result[i].excerpt.rendered}
                 </p>
             </div>
             `;
-/* <img class="cardHome" src="${postsResults[i]._embedded['wp:featuredmedia']['0'].media_details.sizes['1536x1536'].source_url}"/> */
+
             document.querySelector('.containerTwo').innerHTML += `
             <div class="content">
                 <a href="/details-page.html?id=${result[i].id}">
@@ -48,7 +48,7 @@ async function getPosts() {
                 <p>
                     ${result[i].content.rendered}
                 </p>
-                <img src="${result[i]}" alt=".">
+                <img src="${result[i]._embedded['wp:featuredmedia'][0].source_url}"/>
                 <p>
                     ${result[i].excerpt.rendered}
                 </p>
