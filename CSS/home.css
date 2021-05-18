@@ -590,12 +590,13 @@ footer {
   }
 
   .loader {
-    height: 398px;
+    margin-top: 4.3rem;
+    height: 400px;
     width: 100%;
   }
 
   .loader img {
-    height: 100px;
+    height: 80px;
   }
 
   .carousel {

@@ -37,7 +37,7 @@ async function getPosts() {
                 </p>
             </div>
             `;
-
+/* <img class="cardHome" src="${postsResults[i]._embedded['wp:featuredmedia']['0'].media_details.sizes['1536x1536'].source_url}"/> */
             document.querySelector('.containerTwo').innerHTML += `
             <div class="content">
                 <a href="/details-page.html?id=${result[i].id}">
