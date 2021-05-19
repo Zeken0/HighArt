@@ -31,7 +31,7 @@ nav {
   background-color: white;
   color: black;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
-  z-index: 3;
+  z-index: 1003;
   width: 100%;
   position: relative;
 }
@@ -227,6 +227,7 @@ footer {
   height: 100px;
   align-items: center;
   justify-content: space-evenly;
+  z-index: 1003;
 }
 
 .footer-items {

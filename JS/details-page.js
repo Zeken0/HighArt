@@ -9,19 +9,19 @@ const id = params.get('id');
 async function getPosts(postId) {
     try {
         console.log(postId);
-        const repsonse = await fetch('https://api.a1tech.store//wp-json/wp/v2/posts/' + postId);
+        const repsonse = await fetch('https://api.a1tech.store//wp-json/wp/v2/posts?_embed/' + postId);
         const result = await repsonse.json();
 
         document.title +=`
-        ${result.title.rendered}
+            ${result[0].title.rendered}
         `;
         
         document.querySelector('.container').innerHTML =`
-        <div class="content">
-            <h2>${result.title.rendered}</h2>
-            <p>${result.content.rendered}</p>
-            <p>${result.excerpt.rendered}</p>
-        </div>
+            <div class="content">
+                <h2>${result[0].title.rendered}</h2>
+                <p>${result[0].content.rendered}</p>
+                <p>${result[0].excerpt.rendered}</p>
+            </div>
         `;
         /* ------------------------------------------ HideLoader ---------------------------------------------- */
         const loaderContent = document.querySelector('.loader')

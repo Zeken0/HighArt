@@ -7,7 +7,7 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #fefefe;
   font-family: "montserrat", sans-serif;
   display: grid;
@@ -32,7 +32,7 @@ nav {
   background-color: white;
   color: black;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
-  z-index: 3;
+  z-index: 1003;
   width: 100%;
   position: relative;
 }
@@ -112,8 +112,8 @@ main {
   grid-area: main;
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 95%;
+  height: 100vh;
   margin: auto;
   font-family: "roboto";
   color: #000;
@@ -123,11 +123,10 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   z-index: 1000;
   background-color: white;
-  margin-top: 3rem;
 }
 
 .loader img {
@@ -135,7 +134,7 @@ main {
 }
 
 .container {
-  margin: 0rem 0rem 3rem 0rem;
+  margin: 3rem 0rem 3rem 0rem;
 }
 
 .container .content {
@@ -159,7 +158,7 @@ h2 {
   font-size: 2rem;
   letter-spacing: 0.01rem;
   font-weight: 500;
-  margin: 5rem 0 1.5rem 0;
+  margin: 0 0 1.5rem 0;
   text-align: center;
   border-bottom: solid 1.5px lightgray;
   border-width: 0.2rem;
@@ -178,6 +177,7 @@ footer {
   height: 100px;
   align-items: center;
   justify-content: space-evenly;
+  z-index: 1003;
 }
 
 .footer-items {
@@ -336,6 +336,10 @@ footer {
     font-size: 17px;
     text-transform: uppercase;
     padding: 12px 0px 12px 0px;
+  }
+
+  main {
+    height: 100%;
   }
 
   .loader img {

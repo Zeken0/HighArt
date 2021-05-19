@@ -34,6 +34,7 @@ nav {
   z-index: 3;
   width: 100%;
   position: relative;
+  z-index: 1003;
 }
 
 .logo {
@@ -189,6 +190,7 @@ footer {
   height: 100px;
   align-items: center;
   justify-content: space-evenly;
+  z-index: 1003;
 }
 
 .footer-items {
