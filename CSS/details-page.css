@@ -155,14 +155,28 @@ main {
 
 h2 {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 2.3rem;
   letter-spacing: 0.01rem;
   font-weight: 500;
   margin: 0 0 1.5rem 0;
   text-align: center;
-  border-bottom: solid 1.5px lightgray;
+  border-bottom: solid 1.5px gainsboro;
   border-width: 0.2rem;
   border-radius: 3px;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.3rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.fa-user {
+  font-size: 0.83rem;
 }
 
 /* ----------------------------------------------------- Footer -------------------------------------------- */

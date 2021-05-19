@@ -18,9 +18,18 @@ async function getPosts(postId) {
         
         document.querySelector('.container').innerHTML =`
             <div class="content">
-                <h2>${result[0].title.rendered}</h2>
-                <p>${result[0].content.rendered}</p>
-                <p>${result[0].excerpt.rendered}</p>
+                <h2>
+                    ${result[0].title.rendered}
+                </h2>
+                <h3>
+                    ${result[0].slug} <i class="fas fa-user"></i>
+                </h3>
+                <p>
+                    ${result[0].content.rendered}
+                </p>
+                <p>
+                    ${result[0].excerpt.rendered}
+                </p>
             </div>
         `;
         /* ------------------------------------------ HideLoader ---------------------------------------------- */

@@ -198,7 +198,7 @@ main {
 
 h2 {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 2.3rem;
   letter-spacing: 0.01rem;
   font-weight: 500;
   margin: 5rem 0 1.5rem 0;
@@ -208,7 +208,22 @@ h2 {
 }
 
 h2:hover {
-  font-size: 2.05rem;
+  font-size: 2.35rem;
+  border-bottom: solid black;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.3rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.fa-user {
+  font-size: 0.83rem;
 }
 
 main .btn {
@@ -451,6 +466,10 @@ footer {
     font-size: 17px;
     text-transform: uppercase;
     padding: 12px 0px 12px 0px;
+  }
+
+  .loader img {
+    height: 100px;
   }
 
   .container img,

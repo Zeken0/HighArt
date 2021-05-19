@@ -28,6 +28,9 @@ async function getPosts() {
                         ${result[i].title.rendered}
                     </h2>
                 </a>
+                <h3>
+                    ${result[i].slug} <i class="fas fa-user"></i>
+                </h3>
                 <p>
                     ${result[i].content.rendered}
                 </p>
@@ -45,6 +48,9 @@ async function getPosts() {
                         ${result[i].title.rendered}
                     </h2>
                 </a>
+                <h3>
+                    ${result[i].slug} <i class="fas fa-user"></i>
+                </h3>
                 <p>
                     ${result[i].content.rendered}
                 </p>
