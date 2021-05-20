@@ -113,7 +113,7 @@ main {
   display: flex;
   justify-content: center;
   width: 95%;
-  height: 100vh;
+  min-height: 100vh;
   margin: auto;
   font-family: "roboto";
   color: #000;
@@ -171,12 +171,12 @@ h3 {
   align-items: center;
   column-gap: 0.3rem;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 400;
 }
 
 .fa-user {
-  font-size: 0.83rem;
+  font-size: 0.73rem;
 }
 
 /* ----------------------------------------------------- Footer -------------------------------------------- */

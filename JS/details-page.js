@@ -9,29 +9,30 @@ const id = params.get('id');
 async function getPosts(postId) {
     try {
         console.log(postId);
-        const repsonse = await fetch('https://api.a1tech.store//wp-json/wp/v2/posts?_embed/' + postId);
+        const repsonse = await fetch('https://api.a1tech.store//wp-json/wp/v2/posts/' + postId + '?_embed');
         const result = await repsonse.json();
 
-        document.title +=`
-            ${result[0].title.rendered}
-        `;
-        
-        document.querySelector('.container').innerHTML =`
-            <div class="content">
-                <h2>
-                    ${result[0].title.rendered}
-                </h2>
-                <h3>
-                    ${result[0].slug} <i class="fas fa-user"></i>
-                </h3>
-                <p>
-                    ${result[0].content.rendered}
-                </p>
-                <p>
-                    ${result[0].excerpt.rendered}
-                </p>
-            </div>
-        `;
+            document.title =`
+                ${result.title.rendered}
+            `;
+            
+            document.querySelector('.container').innerHTML =`
+                <div class="content">
+                    <h2>
+                        ${result.title.rendered}
+                    </h2>
+                    <h3>
+                        ${result.slug} <i class="fas fa-user"></i>
+                    </h3>
+                    <p>
+                        ${result.content.rendered}
+                    </p>
+                    <img src="${result._embedded['wp:featuredmedia'][0].source_url}"/>
+                    <p>
+                        ${result.excerpt.rendered}
+                    </p>
+                </div>
+            `;
         /* ------------------------------------------ HideLoader ---------------------------------------------- */
         const loaderContent = document.querySelector('.loader')
 
