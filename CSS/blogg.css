@@ -413,6 +413,16 @@ footer {
     bottom: 30px;
     right: 30px;
   }
+
+  .container p {
+    width: 70%;
+  }
+
+  .container .content img,
+  .containerTwo .content img {
+    width: 85%;
+    height: 100%;
+  }
 }
 
 /* ----------------------------------------------------- Mobile -------------------------------------------- */
@@ -499,6 +509,12 @@ footer {
     height: 32px;
     bottom: 20px;
     right: 10px;
+  }
+
+  .container .content img,
+  .containerTwo .content img {
+    width: 100%;
+    height: 100%;
   }
 
   footer {
