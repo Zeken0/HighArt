@@ -27,19 +27,28 @@ async function getPosts(postId) {
                     <p>
                         ${result.content.rendered}
                     </p>
-                    <img src="${result._embedded['wp:featuredmedia'][0].source_url}"/>
+                    <img class="zoom" src="${result._embedded['wp:featuredmedia'][0].source_url}"/>
                     <p>
                         ${result.excerpt.rendered}
                     </p>
                 </div>
             `;
-        /* ------------------------------------------ HideLoader ---------------------------------------------- */
+
+        /* ------------------------------------------ zoomEffect ---------------------------------------------- */
+        const zoomImg = document.querySelector('.zoom');
+
+        zoomImg.onclick = function zoomFunction() {
+            zoomImg.classList.toggle("zoomEffect");
+        };
+        /* ------------------------------------------ /zoomEffect ---------------------------------------------- */
+        
+        /* ------------------------------------------ hideLoader ---------------------------------------------- */
         const loaderContent = document.querySelector('.loader')
 
         setTimeout( function() {
             loaderContent.style.display = "none";
         });
-        /* ----------------------------------------- /HideLoader ---------------------------------------------- */
+        /* ----------------------------------------- /hideLoader ---------------------------------------------- */
     } catch (error) {
         document.querySelector('.alert').innerHTML += thisIsAnAlert(
             'An error has occured',

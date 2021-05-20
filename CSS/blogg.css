@@ -189,7 +189,7 @@ main {
   line-height: 1.6;
   letter-spacing: 0.01rem;
   font-size: 1rem;
-  width: 70%;
+  width: 60%;
   margin: auto;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -275,6 +275,12 @@ main .up-btn:focus {
 
 .hide {
   display: none;
+}
+
+.container .content img,
+.containerTwo .content img {
+  width: 70%;
+  height: 100%;
 }
 
 /* ----------------------------------------------------- Footer -------------------------------------------- */
