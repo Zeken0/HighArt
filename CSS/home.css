@@ -277,7 +277,7 @@ main {
   position: absolute;
   top: 45%;
   bottom: auto;
-  right: 0.7rem;
+  right: 2.65rem;
   z-index: 100;
   font-weight: bolder;
 }
@@ -445,8 +445,22 @@ footer {
     width: 740px;
   }
 
+  .slick-prev {
+    position: absolute;
+    top: 45%;
+    bottom: auto;
+    left: 0.5rem;
+    z-index: 100;
+    font-weight: bolder;
+  }
+
   .slick-next {
-    right: 0.6rem;
+    position: absolute;
+    top: 45%;
+    bottom: auto;
+    right: 2.65rem;
+    z-index: 100;
+    font-weight: bolder;
   }
 
   .loader {
@@ -585,8 +599,22 @@ footer {
     justify-content: center;
   }
 
+  .slick-prev {
+    position: absolute;
+    top: 45%;
+    bottom: auto;
+    left: 0.5rem;
+    z-index: 100;
+    font-weight: bolder;
+  }
+
   .slick-next {
-    right: 0.5rem;
+    position: absolute;
+    top: 44%;
+    bottom: auto;
+    right: 2.3rem;
+    z-index: 100;
+    font-weight: bolder;
   }
 
   .loader {
