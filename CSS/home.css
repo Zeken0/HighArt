@@ -111,10 +111,13 @@ main {
   grid-area: main;
   width: 95%;
   margin: auto;
+  position: relative;
 }
 
 .alert {
   width: 100%;
+  position: fixed;
+  z-index: 1007;
 }
 
 .danger {

@@ -124,6 +124,8 @@ main {
 
 .alert {
   width: 100%;
+  position: fixed;
+  z-index: 1007;
 }
 
 .danger {
@@ -211,6 +213,7 @@ h2 {
 h2:hover {
   font-size: 2.35rem;
   border-bottom: solid black;
+  transition: 0.3s;
 }
 
 h3 {
