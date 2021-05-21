@@ -185,6 +185,7 @@ main {
   background-color: #333;
   color: white;
   font-size: 1.22rem;
+  transition: 0.3s;
 }
 
 .top-right-content {
@@ -260,11 +261,12 @@ main {
   height: 295px;
   width: 295px;
   border-radius: 3px 3px 0 0;
-  cursor: pointer;
 }
 
-.carousel__items img:hover {
-  opacity: 85%;
+.carousel__items:hover {
+  opacity: 90%;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .slick-prev {

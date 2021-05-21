@@ -196,8 +196,13 @@ h3 {
 }
 
 .container .content img {
-  cursor: pointer;
   width: 70%;
+}
+
+.container .content img:hover {
+  cursor: pointer;
+  opacity: 90%;
+  transition: 0.3s;
 }
 
 .zoomEffect {

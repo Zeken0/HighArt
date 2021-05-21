@@ -165,6 +165,7 @@ main {
   background-color: #333;
   color: white;
   font-size: 1.2rem;
+  transition: 0.3s;
 }
 
 .right-content {

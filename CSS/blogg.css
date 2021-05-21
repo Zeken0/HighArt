@@ -246,12 +246,13 @@ main .btn {
 
 main .btn:hover {
   background-color: #333;
+  transition: 0.3s;
 }
 
 main .up-btn {
   display: none;
   position: fixed;
-  bottom: 1rem;
+  bottom: 1.45rem;
   right: 20px;
   font-size: 26px;
   width: 50px;
@@ -262,7 +263,7 @@ main .up-btn {
   outline: none;
   border: 3px solid #333;
   border-radius: 50%;
-  transition-duration: 0.2s;
+  transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
   transition-property: background-color, color;
 }
@@ -523,7 +524,7 @@ footer {
     font-size: 18px;
     width: 32px;
     height: 32px;
-    bottom: 20px;
+    bottom: 1.55rem;
     right: 10px;
   }
 
