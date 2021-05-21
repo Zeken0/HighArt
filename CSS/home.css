@@ -275,16 +275,26 @@ main {
   bottom: auto;
   left: 0.5rem;
   z-index: 100;
-  font-weight: bolder;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  outline: none;
+  cursor: pointer;
 }
 
 .slick-next {
   position: absolute;
   top: 45%;
   bottom: auto;
-  right: 2.65rem;
+  right: 0.65rem;
   z-index: 100;
-  font-weight: bolder;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  outline: none;
+  cursor: pointer;
 }
 
 /* ----------------------------------------------------- Footer -------------------------------------------- */
@@ -450,22 +460,8 @@ footer {
     width: 740px;
   }
 
-  .slick-prev {
-    position: absolute;
-    top: 45%;
-    bottom: auto;
-    left: 0.5rem;
-    z-index: 100;
-    font-weight: bolder;
-  }
-
   .slick-next {
-    position: absolute;
-    top: 45%;
-    bottom: auto;
-    right: 2.65rem;
-    z-index: 100;
-    font-weight: bolder;
+    right: 0.65rem;
   }
 
   .loader {
@@ -604,22 +600,8 @@ footer {
     justify-content: center;
   }
 
-  .slick-prev {
-    position: absolute;
-    top: 45%;
-    bottom: auto;
-    left: 0.5rem;
-    z-index: 100;
-    font-weight: bolder;
-  }
-
   .slick-next {
-    position: absolute;
-    top: 45%;
-    bottom: auto;
-    right: 2.3rem;
-    z-index: 100;
-    font-weight: bolder;
+    right: 0.45rem;
   }
 
   .loader {

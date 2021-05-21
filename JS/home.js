@@ -54,6 +54,14 @@ async function getPosts() {
             filtered = false;
             }
         });
+
+        document.querySelector('.slick-prev').innerHTML =`
+        <i class="fas fa-chevron-circle-left"></i>
+        `;
+        
+        document.querySelector('.slick-next').innerHTML =`
+        <i class="fas fa-chevron-circle-right"></i>
+        `;
         /* ---------------------------------------- Carousel slider -------------------------------------------- */
 
          /* ---------------------------------------- HideLoader -------------------------------------------- */
