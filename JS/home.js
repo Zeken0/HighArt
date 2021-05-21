@@ -55,11 +55,14 @@ async function getPosts() {
             }
         });
 
-        document.querySelector('.slick-prev').innerHTML =`
+        const slickPrev = document.querySelector('.slick-prev');
+        const slickNext = document.querySelector('.slick-next');
+
+        slickPrev.innerHTML =`
         <i class="fas fa-chevron-circle-left"></i>
         `;
         
-        document.querySelector('.slick-next').innerHTML =`
+        slickNext.innerHTML =`
         <i class="fas fa-chevron-circle-right"></i>
         `;
         /* ---------------------------------------- Carousel slider -------------------------------------------- */
