@@ -242,6 +242,7 @@ main .btn {
   font-size: 1.2rem;
   border: none;
   text-transform: uppercase;
+  z-index: 1;
 }
 
 main .btn:hover {
