@@ -163,6 +163,7 @@ h2 {
   border-bottom: solid 1.5px gainsboro;
   border-width: 0.2rem;
   border-radius: 3px;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -381,6 +382,10 @@ footer {
 
   .loader img {
     height: 100px;
+  }
+
+  h2 {
+    font-size: 2rem;
   }
 
   .container p {

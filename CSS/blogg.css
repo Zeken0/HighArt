@@ -205,6 +205,7 @@ h2 {
   border-bottom: solid 1.5px lightgrey;
   border-width: 0.2rem;
   border-radius: 3px;
+  text-transform: uppercase;
 }
 
 h2:hover {
@@ -494,6 +495,14 @@ footer {
     width: 360px;
   }
 
+  h2 {
+    font-size: 2rem;
+  }
+
+  h2:hover {
+    font-size: 2rem;
+  }
+
   .container p,
   .containerTwo p {
     width: 90%;
@@ -501,6 +510,10 @@ footer {
 
   main .btn {
     width: 100%;
+  }
+
+  main .btn:hover {
+    background-color: black;
   }
 
   main .up-btn {

@@ -238,16 +238,19 @@ main {
 }
 
 .carousel .carousel__items a h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "roboto";
   font-weight: 600;
-  font-size: 1.1rem;
-  text-align: center;
-  padding: 0.5rem 0;
+  font-size: 1rem;
+  padding: 0.85rem 0;
   border: none;
   color: white;
   background-color: black;
-  width: 98.35%;
   border-radius: 0px 0px 3px 3px;
+  text-transform: uppercase;
+  width: 98.35%;
 }
 
 .carousel__items img {
@@ -258,7 +261,7 @@ main {
 }
 
 .carousel__items img:hover {
-  opacity: 80%;
+  opacity: 85%;
 }
 
 .slick-prev {
