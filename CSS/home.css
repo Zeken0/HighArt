@@ -63,10 +63,14 @@ nav {
   padding: 8px 8px 11px 8px;
   color: white;
   background-color: black;
-  cursor: pointer;
   width: fit-content;
   position: absolute;
   border-radius: 0px 3px 3px 0;
+}
+
+.search i:hover {
+  cursor: pointer;
+  color: gainsboro;
 }
 
 .menu {
@@ -247,8 +251,8 @@ main {
   align-items: center;
   font-family: "roboto";
   font-weight: 600;
-  font-size: 1rem;
-  padding: 0.85rem 0;
+  font-size: 0.95rem;
+  padding: 0.7rem 0;
   border: none;
   color: white;
   background-color: black;
@@ -273,7 +277,7 @@ main {
   position: absolute;
   top: 45%;
   bottom: auto;
-  left: 0.5rem;
+  left: 0.45rem;
   z-index: 100;
   background-color: black;
   color: white;
@@ -281,6 +285,9 @@ main {
   font-size: 1.5rem;
   outline: none;
   cursor: pointer;
+  border-radius: 55%;
+  height: 20px;
+  width: 22px;
 }
 
 .slick-next {
@@ -295,6 +302,9 @@ main {
   font-size: 1.5rem;
   outline: none;
   cursor: pointer;
+  border-radius: 55%;
+  height: 20px;
+  width: 22px;
 }
 
 /* ----------------------------------------------------- Footer -------------------------------------------- */
@@ -461,7 +471,7 @@ footer {
   }
 
   .slick-next {
-    right: 0.65rem;
+    right: 0.75rem;
   }
 
   .loader {
@@ -476,6 +486,7 @@ footer {
 
   .carousel .carousel__items a h3 {
     width: 97.9%;
+    font-size: 0.79rem;
   }
 
   .carousel__items img {
@@ -620,6 +631,7 @@ footer {
 
   .carousel .carousel__items a h3 {
     width: 100%;
+    font-size: 0.95rem;
   }
 
   .carousel__items img {
