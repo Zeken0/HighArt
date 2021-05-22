@@ -282,7 +282,7 @@ main {
   background-color: black;
   color: white;
   border: none;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   outline: none;
   cursor: pointer;
   border-radius: 55%;
@@ -294,12 +294,12 @@ main {
   position: absolute;
   top: 45%;
   bottom: auto;
-  right: 0.65rem;
+  right: 0.9rem;
   z-index: 100;
   background-color: black;
   color: white;
   border: none;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   outline: none;
   cursor: pointer;
   border-radius: 55%;
@@ -471,7 +471,7 @@ footer {
   }
 
   .slick-next {
-    right: 0.75rem;
+    right: 0.95rem;
   }
 
   .loader {
@@ -612,7 +612,7 @@ footer {
   }
 
   .slick-next {
-    right: 0.5rem;
+    right: 0.65rem;
   }
 
   .loader {
