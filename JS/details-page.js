@@ -8,7 +8,7 @@ async function getPosts(postId) {
         const repsonse = await fetch('https://api.a1tech.store//wp-json/wp/v2/posts/' + postId + '?_embed');
         const result = await repsonse.json();
 
-            document.title =`
+            document.title +=`
                 ${result.title.rendered}
             `;
             document.querySelector('.container').innerHTML =`

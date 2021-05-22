@@ -18,7 +18,7 @@ async function getPosts() {
         /* ---------------------------------------- Carousel slider --------------------------------------------- */
         $('.carousel').slick({
             slidesToShow: 4,
-            slidesToScroll: 1,
+            slidesToScroll: 4,
             autoplay: true,
             autoplaySpeed: 3000,
             responsive: [
@@ -26,7 +26,7 @@ async function getPosts() {
                 breakpoint: 991,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 1,
+                    slidesToScroll: 3,
                     infinite: true,
                     dots: false,
                 }
