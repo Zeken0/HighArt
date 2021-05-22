@@ -1,9 +1,5 @@
 const queryString = document.location.search;
-console.log(queryString);
-// create an object that will allows us to access all the query string parameters
 const params = new URLSearchParams(queryString);
-console.log(params);
-// get the id parameter from the query string
 const id = params.get('id');
 
 async function getPosts(postId) {
@@ -15,7 +11,6 @@ async function getPosts(postId) {
             document.title =`
                 ${result.title.rendered}
             `;
-            
             document.querySelector('.container').innerHTML =`
                 <div class="content">
                     <h2>
@@ -28,6 +23,9 @@ async function getPosts(postId) {
                         ${result.content.rendered}
                     </p>
                     <img class="zoom" src="${result._embedded['wp:featuredmedia'][0].source_url}"/>
+                    <div class="modal-container">
+                        <img class="modal" src="${result._embedded['wp:featuredmedia'][0].source_url}"/>
+                    </div>
                     <p>
                         ${result.excerpt.rendered}
                     </p>
@@ -35,11 +33,16 @@ async function getPosts(postId) {
             `;
 
         /* ------------------------------------------ zoomEffect ---------------------------------------------- */
-        const zoomImg = document.querySelector('.zoom');
+        const imgTooZoom = document.querySelector('.zoom');
+        const modalContainer = document.querySelector('.modal-container');
 
-        zoomImg.onclick = function zoomFunction() {
-            zoomImg.classList.toggle("zoomEffect");
-        };
+        imgTooZoom.addEventListener('click', () => {
+            modalContainer.classList.add('show')
+        });
+        
+        modalContainer.addEventListener('click', () => {
+            modalContainer.classList.remove('show')
+        });
         /* ------------------------------------------ /zoomEffect ---------------------------------------------- */
         
         /* ------------------------------------------ hideLoader ---------------------------------------------- */

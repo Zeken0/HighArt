@@ -64,10 +64,14 @@ nav {
   padding: 8px 8px 11px 8px;
   color: white;
   background-color: black;
-  cursor: pointer;
   width: fit-content;
   position: absolute;
   border-radius: 0 3px 3px 0;
+}
+
+.search i:hover {
+  cursor: pointer;
+  color: gainsboro;
 }
 
 .menu {

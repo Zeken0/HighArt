@@ -95,6 +95,7 @@ async function getPosts() {
 
         setTimeout( function() {
             loaderContent.style.display = "none";
+            showMoreBtn.style.display = "block"
         });
          /* ----------------------------------------- /HideLoader ---------------------------------------------- */
     } catch (error) {
