@@ -59,11 +59,17 @@ async function getPosts() {
         const slickNext = document.querySelector('.slick-next');
 
         slickPrev.innerHTML =`
-        <i class="fas fa-chevron-circle-left"></i>
+        <span class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fas fa-angle-left fa-stack-1x fa-inverse"></i>
+        </span>
         `;
         
         slickNext.innerHTML =`
-        <i class="fas fa-chevron-circle-right"></i>
+        <span class="fa-stack fa-2x ion">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fab fa-angle-right fa-stack-1x fa-inverse"></i>
+        </span>
         `;
         /* ---------------------------------------- Carousel slider -------------------------------------------- */
 
