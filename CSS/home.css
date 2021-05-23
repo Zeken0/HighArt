@@ -273,15 +273,11 @@ main {
   transition: 0.3s;
 }
 
-.fa-circle {
-  font-size: 2.2rem;
-}
-
 .slick-prev {
   position: absolute;
   top: auto;
-  bottom: 52.18%;
-  left: 0.05rem;
+  bottom: 52%;
+  left: 0.3rem;
   z-index: 1;
   border: none;
   outline: none;
@@ -297,8 +293,8 @@ main {
 .slick-next {
   position: absolute;
   top: auto;
-  bottom: 52.18%;
-  right: 0.2rem;
+  bottom: 52%;
+  right: 0.55rem;
   z-index: 1;
   border: none;
   background-color: transparent;
@@ -308,6 +304,7 @@ main {
 
 .fa-angle-right {
   color: white;
+  font-size: 1.5rem;
 }
 
 /* ----------------------------------------------------- Footer -------------------------------------------- */
@@ -474,7 +471,7 @@ footer {
   }
 
   .slick-next {
-    right: 0.25rem;
+    right: 0.45rem;
   }
 
   .loader {
@@ -615,7 +612,7 @@ footer {
   }
 
   .slick-next {
-    right: 0rem;
+    right: 0.2rem;
   }
 
   .loader {
