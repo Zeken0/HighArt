@@ -273,10 +273,14 @@ main {
   transition: 0.3s;
 }
 
+.fa-circle {
+  font-size: 2.2rem;
+}
+
 .slick-prev {
   position: absolute;
   top: auto;
-  bottom: 48.1%;
+  bottom: 52.18%;
   left: 0.05rem;
   z-index: 1;
   border: none;
@@ -287,13 +291,13 @@ main {
 
 .fa-angle-left {
   color: white;
-  font-size: 2.25rem;
+  font-size: 1.5rem;
 }
 
 .slick-next {
   position: absolute;
   top: auto;
-  bottom: 48.1%;
+  bottom: 52.18%;
   right: 0.2rem;
   z-index: 1;
   border: none;
@@ -304,7 +308,6 @@ main {
 
 .fa-angle-right {
   color: white;
-  font-size: 2.25rem;
 }
 
 /* ----------------------------------------------------- Footer -------------------------------------------- */
