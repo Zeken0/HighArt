@@ -185,6 +185,7 @@ main {
 
 /* ----------------------------------------------------- Footer -------------------------------------------- */
 footer {
+  margin-top: 3rem;
   grid-area: footer;
   display: flex;
   flex-direction: row;
@@ -192,7 +193,7 @@ footer {
   align-items: center;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   background-color: black;
-  height: 100px;
+  height: 85px;
   align-items: center;
   justify-content: space-evenly;
   z-index: 1003;
@@ -200,31 +201,33 @@ footer {
 
 .footer-items {
   display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 3rem;
   color: whitesmoke;
   column-gap: 3.5rem;
 }
 
 .fa-facebook-f:hover {
-  font-size: 3.5rem;
+  font-size: 3.11rem;
   cursor: pointer;
   transition: 0.3s;
   color: #4267b2;
 }
 .fa-instagram:hover {
-  font-size: 3.5rem;
+  font-size: 3.11rem;
   cursor: pointer;
   transition: 0.3s;
   color: #e1306c;
 }
 .fa-spotify:hover {
-  font-size: 3.5rem;
+  font-size: 3.11rem;
   cursor: pointer;
   transition: 0.3s;
   color: #1db954;
 }
 .fa-twitter:hover {
-  font-size: 3.5rem;
+  font-size: 3.11rem;
   cursor: pointer;
   transition: 0.3s;
   color: #1da1f2;
