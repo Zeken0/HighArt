@@ -23,8 +23,8 @@ async function getPosts() {
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 3000,
-      prevArrow:'<span class="prev_arrow"><i class="fas fa-chevron-circle-left"></i></span>',
-      nextArrow:'<span class="next_arrow"><i class="fas fa-chevron-circle-right"></i></span>',
+      prevArrow:'<span class="prev_arrow"><i class="fas fa-caret-left"></i></span>',
+      nextArrow:'<span class="next_arrow"><i class="fas fa-caret-right"></i></span>',
       responsive: [
         {
           breakpoint: 991,
