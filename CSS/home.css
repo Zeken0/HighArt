@@ -627,6 +627,10 @@ footer {
     width: 350px;
   }
 
+  .next_arrow {
+    right: 0.75rem;
+  }
+
   footer {
     height: 80px;
   }
