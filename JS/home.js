@@ -20,9 +20,11 @@ async function getPosts() {
     /* ---------------------------------------- Carousel slider --------------------------------------------- */
     $(".carousel").slick({
       slidesToShow: 4,
-      slidesToScroll: 4,
+      slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 3000,
+      prevArrow:'<span class="prev_arrow"><i class="fas fa-chevron-circle-left"></i></span>',
+      nextArrow:'<span class="next_arrow"><i class="fas fa-chevron-circle-right"></i></span>',
       responsive: [
         {
           breakpoint: 991,
@@ -57,22 +59,22 @@ async function getPosts() {
       }
     });
 
-    const slickPrev = document.querySelector(".slick-prev");
-    const slickNext = document.querySelector(".slick-next");
+    // const slickPrev = document.querySelector(".slick-prev");
+    // const slickNext = document.querySelector(".slick-next");
 
-    slickPrev.innerHTML = `
-        <span class="fa-stack">
-            <i class="fas fa-circle fa-stack-2x"></i>
-            <i class="fas fa-angle-left fa-stack-1x fa-inverse"></i>
-        </span>
-        `;
+    // slickPrev.innerHTML = `
+    //     <span class="fa-stack">
+    //         <i class="fas fa-circle fa-stack-2x"></i>
+    //         <i class="fas fa-angle-left fa-stack-1x fa-inverse"></i>
+    //     </span>
+    //     `;
 
-    slickNext.innerHTML = `
-        <span class="fa-stack">
-            <i class="fas fa-circle fa-stack-2x"></i>
-            <i class="fab fa-angle-right fa-stack-1x fa-inverse"></i>
-        </span>
-        `;
+    // slickNext.innerHTML = `
+    //     <span class="fa-stack">
+    //         <i class="fas fa-circle fa-stack-2x"></i>
+    //         <i class="fab fa-angle-right fa-stack-1x fa-inverse"></i>
+    //     </span>
+    //     `;
     /* ---------------------------------------- Carousel slider -------------------------------------------- */
 
     /* ---------------------------------------- HideLoader -------------------------------------------- */

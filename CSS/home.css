@@ -273,38 +273,32 @@ main {
   transition: 0.3s;
 }
 
-.slick-prev {
+.prev_arrow {
   position: absolute;
-  top: auto;
-  bottom: 52%;
-  left: 0.3rem;
-  z-index: 1;
+  bottom: auto;
+  top: 38.4%;
+  left: 0.75rem;
+  font-size: 2rem;
+  background-color: black;
+  color: white;
   border: none;
   outline: none;
   cursor: pointer;
-  background-color: transparent;
+  z-index: 10;
 }
 
-.fa-angle-left {
-  color: white;
-  font-size: 1.5rem;
-}
-
-.slick-next {
+.next_arrow {
   position: absolute;
-  top: auto;
-  bottom: 52%;
-  right: 0.55rem;
-  z-index: 1;
+  bottom: auto;
+  top: 38.4%;
+  right: 1rem;
+  font-size: 2rem;
+  background-color: black;
+  color: white;
   border: none;
-  background-color: transparent;
   outline: none;
   cursor: pointer;
-}
-
-.fa-angle-right {
-  color: white;
-  font-size: 1.5rem;
+  z-index: 10;
 }
 
 /* ----------------------------------------------------- Footer -------------------------------------------- */
@@ -472,10 +466,6 @@ footer {
     width: 740px;
   }
 
-  .slick-next {
-    right: 0.45rem;
-  }
-
   .loader {
     width: 96.5%;
     margin-left: -0.5rem;
@@ -611,10 +601,6 @@ footer {
     width: 350px;
     display: flex;
     justify-content: center;
-  }
-
-  .slick-next {
-    right: 0.2rem;
   }
 
   .loader {
