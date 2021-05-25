@@ -101,7 +101,7 @@ ul li a:hover {
   background-color: transparent;
   font-size: 1.8rem;
   color: black;
-  border: 0;
+  border: none;
   cursor: pointer;
   display: none;
 }
@@ -198,7 +198,7 @@ form button {
   text-transform: uppercase;
 }
 
-button:hover {
+form button:hover {
   background-color: #333;
   color: white;
   font-size: 1.22rem;

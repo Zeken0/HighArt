@@ -447,7 +447,7 @@ footer {
   }
 
   .modal {
-    height: 55%;
+    height: auto;
     width: 95%;
   }
 
