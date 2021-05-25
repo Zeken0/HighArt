@@ -22,9 +22,9 @@ async function getPosts(postId) {
                     <p>
                         ${result.content.rendered}
                     </p>
-                    <img class="zoom" src="${result._embedded['wp:featuredmedia'][0].source_url}"/>
+                    <img class="zoom" src="${result._embedded['wp:featuredmedia'][0].source_url}" alt="Image of an album cover"/>
                     <div class="modal-container">
-                        <img class="modal" src="${result._embedded['wp:featuredmedia'][0].source_url}"/>
+                        <img class="modal" src="${result._embedded['wp:featuredmedia'][0].source_url}" alt="Image of an album cover"/>
                     </div>
                     <p>
                         ${result.excerpt.rendered}

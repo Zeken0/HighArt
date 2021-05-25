@@ -9,7 +9,7 @@ async function getPosts() {
       document.querySelector(".carousel").innerHTML += `
             <div class="carousel__items">
                 <a href="/details-page.html?id=${result[i].id}">
-                    <img src="${result[i]._embedded["wp:featuredmedia"][0].source_url}" alt="album cover"/>
+                    <img src="${result[i]._embedded["wp:featuredmedia"][0].source_url}" alt="Image of an album cover"/>
                     <h3>
                         ${result[i].title.rendered}
                     </h3>

@@ -34,7 +34,7 @@ async function getPosts() {
                 <p>
                     ${result[i].content.rendered}
                 </p>
-                <img src="${result[i]._embedded['wp:featuredmedia'][0].source_url}"/>
+                <img src="${result[i]._embedded['wp:featuredmedia'][0].source_url}" alt="Image of an album cover"/>
                 <p>
                     ${result[i].excerpt.rendered}
                 </p>
@@ -54,7 +54,7 @@ async function getPosts() {
                 <p>
                     ${result[i].content.rendered}
                 </p>
-                <img src="${result[i]._embedded['wp:featuredmedia'][0].source_url}"/>
+                <img src="${result[i]._embedded['wp:featuredmedia'][0].source_url}" alt="Image of an album cover"/>
                 <p>
                     ${result[i].excerpt.rendered}
                 </p>
