@@ -284,6 +284,9 @@ footer {
 /* ----------------------------------------------------- Tablet -------------------------------------------- */
 @media (max-width: 991px) /*Tablet*/ {
   .hamburger {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
     display: block;
   }
 
