@@ -122,7 +122,6 @@ main {
   width: 95%;
   min-height: 100vh;
   margin: auto;
-  font-family: "roboto";
   color: #000;
 }
 
@@ -173,6 +172,11 @@ main {
   width: fit-content;
 }
 
+.container img:hover,
+.containerTwo img:hover {
+  opacity: 97%;
+}
+
 .containerTwoToggle {
   display: flex;
 }
@@ -191,8 +195,9 @@ main {
 
 .container p,
 .containerTwo p {
-  font-weight: 300;
-  line-height: 1.6;
+  font-family: sans-serif;
+  font-weight: 500;
+  line-height: 1.6rem;
   letter-spacing: 0.01rem;
   font-size: 1rem;
   width: 60%;
@@ -203,6 +208,7 @@ main {
 }
 
 h2 {
+  font-family: "roboto";
   display: inline-block;
   font-size: 2.3rem;
   letter-spacing: 0.01rem;
@@ -221,6 +227,7 @@ h2:hover {
 }
 
 h3 {
+  font-family: "roboto";
   display: flex;
   justify-content: center;
   align-items: center;
@@ -235,7 +242,6 @@ h3 {
 }
 
 main .btn {
-  font-family: "roboto";
   width: 20%;
   height: 50px;
   margin-bottom: 3rem;
