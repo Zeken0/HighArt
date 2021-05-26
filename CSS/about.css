@@ -236,9 +236,6 @@ footer {
 /* ----------------------------------------------------- Tablet -------------------------------------------- */
 @media (max-width: 991px) /*Tablet*/ {
   .hamburger {
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
     display: block;
   }
 
@@ -247,8 +244,8 @@ footer {
   }
 
   .search {
-    margin-left: 2rem;
-    width: 45%;
+    margin-right: 1rem;
+    width: 50%;
   }
 
   .menu {

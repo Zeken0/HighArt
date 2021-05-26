@@ -152,7 +152,7 @@ main {
 }
 
 .loader img {
-  height: 140px;
+  height: 120px;
 }
 
 .container {
@@ -347,9 +347,6 @@ footer {
 /* ----------------------------------------------------- Tablet -------------------------------------------- */
 @media (max-width: 991px) /*Tablet*/ {
   .hamburger {
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
     display: block;
   }
 
@@ -358,8 +355,8 @@ footer {
   }
 
   .search {
-    margin-left: 2rem;
-    width: 45%;
+    margin-right: 1rem;
+    width: 50%;
   }
 
   .menu {
@@ -445,6 +442,9 @@ footer {
 /* ----------------------------------------------------- Mobile -------------------------------------------- */
 @media (max-width: 767px) /*Mobile*/ {
   .hamburger {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
     display: block;
   }
 

@@ -159,7 +159,7 @@ input[type="text"] {
 
 input:hover {
   border: solid black;
-  transition: 0.1s;
+  transition: 0.15s;
 }
 
 label {
@@ -284,8 +284,8 @@ footer {
   }
 
   .search {
-    margin-left: 2rem;
-    width: 45%;
+    margin-right: 1rem;
+    width: 50%;
   }
 
   .menu {
@@ -361,6 +361,9 @@ footer {
 /* ----------------------------------------------------- Mobile -------------------------------------------- */
 @media (max-width: 767px) /*Mobile*/ {
   .hamburger {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
     display: block;
   }
 
