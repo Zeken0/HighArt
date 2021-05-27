@@ -516,15 +516,15 @@ footer {
     width: 360px;
   }
 
+  h1 {
+    font-size: 2rem;
+  }
+
+  h1:hover {
+    font-size: 2rem;
+  }
+
   h2 {
-    font-size: 2rem;
-  }
-
-  h2:hover {
-    font-size: 2rem;
-  }
-
-  h3 {
     margin-bottom: 2rem;
   }
 
