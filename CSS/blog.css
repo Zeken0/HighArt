@@ -437,6 +437,11 @@ footer {
     width: 70%;
   }
 
+  .container,
+  .containerTwo {
+    row-gap: 2rem;
+  }
+
   .container .content img,
   .containerTwo .content img {
     width: 85%;
@@ -508,6 +513,11 @@ footer {
 
   .loader img {
     height: 100px;
+  }
+
+  .container,
+  .containerTwo {
+    row-gap: 0rem;
   }
 
   .container img,
