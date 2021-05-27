@@ -188,8 +188,8 @@ main {
   padding-bottom: 1rem;
 }
 
-.container a h2,
-.containerTwo a h2 {
+.container a h1,
+.containerTwo a h1 {
   color: #000;
 }
 
@@ -206,10 +206,10 @@ main {
   text-align: start;
 }
 
-h2 {
+h1 {
   font-family: "roboto";
   display: inline-block;
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   letter-spacing: 0.01rem;
   font-weight: 500;
   margin: 5rem 0 1.5rem 0;
@@ -219,21 +219,21 @@ h2 {
   text-transform: uppercase;
 }
 
-h2:hover {
-  font-size: 2.35rem;
+h1:hover {
+  font-size: 2.55rem;
   border-bottom: solid black;
   transition: 0.3s;
 }
 
-h3 {
+h2 {
   font-family: "roboto";
   display: flex;
   justify-content: center;
   align-items: center;
   column-gap: 0.3rem;
   text-transform: uppercase;
-  font-size: 0.9rem;
-  font-weight: 400;
+  font-size: 0.85rem;
+  font-weight: 500;
 }
 
 .fa-user {

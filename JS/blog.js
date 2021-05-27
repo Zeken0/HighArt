@@ -24,13 +24,13 @@ async function getPosts() {
             document.querySelector('.container').innerHTML += `
             <div class="content">
                 <a href="/details-page.html?id=${result[i].id}">
-                    <h2>
+                    <h1>
                         ${result[i].title.rendered}
-                    </h2>
+                    </h1>
                 </a>
-                <h3>
+                <h2>
                     ${result[i].slug}  <i class="fas fa-user"></i>
-                </h3>
+                </h2>
                 <p>
                     ${result[i].content.rendered}
                 </p>
@@ -46,13 +46,13 @@ async function getPosts() {
             document.querySelector('.containerTwo').innerHTML += `
             <div class="content">
                 <a href="/details-page.html?id=${result[i].id}">
-                    <h2>
+                    <h1>
                         ${result[i].title.rendered}
-                    </h2>
+                    </h1>
                 </a>
-                <h3>
+                <h2>
                     ${result[i].slug} <i class="fas fa-user"></i>
-                </h3>
+                </h2>
                 <p>
                     ${result[i].content.rendered}
                 </p>

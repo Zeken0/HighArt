@@ -171,10 +171,10 @@ main {
   text-align: start;
 }
 
-h2 {
+h1 {
   font-family: "roboto";
   display: inline-block;
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   letter-spacing: 0.01rem;
   font-weight: 500;
   margin: 0 0 1.5rem 0;
@@ -185,15 +185,15 @@ h2 {
   text-transform: uppercase;
 }
 
-h3 {
+h2 {
   font-family: "roboto";
   display: flex;
   justify-content: center;
   align-items: center;
   column-gap: 0.3rem;
   text-transform: uppercase;
-  font-size: 0.9rem;
-  font-weight: 400;
+  font-size: 0.85rem;
+  font-weight: 500;
 }
 
 .fa-user {

@@ -13,12 +13,12 @@ async function getPosts(postId) {
             `;
             document.querySelector('.container').innerHTML =`
                 <div class="content">
-                    <h2>
+                    <h1>
                         ${result.title.rendered}
-                    </h2>
-                    <h3>
+                    </h1>
+                    <h2>
                         ${result.slug} <i class="fas fa-user"></i>
-                    </h3>
+                    </h2>
                     <p>
                         ${result.content.rendered}
                     </p>
