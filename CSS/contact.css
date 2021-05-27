@@ -429,6 +429,10 @@ footer {
     margin-bottom: 1rem;
   }
 
+  label {
+    font-weight: 400;
+  }
+
   .left-content button {
     width: 100%;
   }
