@@ -32,14 +32,11 @@ async function getPosts() {
                     ${result[i].slug}  <i class="fas fa-user"></i>
                 </h2>
                 <p>
-                    ${result[i].content.rendered}
+                    ${result[i].excerpt.rendered}
                 </p>
                 <a href="/details-page.html?id=${result[i].id}">
                     <img src="${result[i]._embedded['wp:featuredmedia'][0].source_url}" alt="Image of an album cover"/>
                 </a>
-                <p>
-                    ${result[i].excerpt.rendered}
-                </p>
             </div>
             `;
 
@@ -54,14 +51,11 @@ async function getPosts() {
                     ${result[i].slug} <i class="fas fa-user"></i>
                 </h2>
                 <p>
-                    ${result[i].content.rendered}
+                    ${result[i].excerpt.rendered}
                 </p>
                 <a href="/details-page.html?id=${result[i].id}">
                     <img src="${result[i]._embedded['wp:featuredmedia'][0].source_url}" alt="Image of an album cover"/>
                 </a>
-                <p>
-                    ${result[i].excerpt.rendered}
-                </p>
             </div>
             `;
         }
