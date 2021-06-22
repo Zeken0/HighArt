@@ -20,17 +20,17 @@ async function getPosts() {
     /* ---------------------------------------- Carousel slider --------------------------------------------- */
     $(".carousel").slick({
       slidesToShow: 4,
-      slidesToScroll: 4,
+      slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 3000,
-      prevArrow:'<span class="prev_arrow"><i class="fas fa-caret-left"></i></span>',
-      nextArrow:'<span class="next_arrow"><i class="fas fa-caret-right"></i></span>',
+      prevArrow: '<span class="prev_arrow"><i class="fas fa-caret-left"></i></span>',
+      nextArrow: '<span class="next_arrow"><i class="fas fa-caret-right"></i></span>',
       responsive: [
         {
           breakpoint: 991,
           settings: {
             slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToScroll: 1,
             infinite: true,
             dots: false,
           },

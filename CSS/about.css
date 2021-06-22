@@ -169,7 +169,8 @@ main {
 .left-content button:hover {
   background-color: #333;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.21rem;
+  letter-spacing: 0.5px;
   transition: 0.3s;
 }
 
