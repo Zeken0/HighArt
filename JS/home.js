@@ -1,30 +1,30 @@
 async function getPosts() {
   try {
-    const repsonse = await fetch(
-      "https://api.a1tech.store//wp-json/wp/v2/posts?_embed"
-    );
-    const result = await repsonse.json();
+    const repsonse = await fetch("http://localhost:1337/Artists");
+    const data = await repsonse.json();
 
-    for (let i = 0; i < result.length; i++) {
+    data.forEach((artist) => {
       document.querySelector(".carousel").innerHTML += `
             <div class="carousel__items">
-                <a href="/details-page.html?id=${result[i].id}">
-                    <img src="${result[i]._embedded["wp:featuredmedia"][0].source_url}" alt="Image of an album cover"/>
+                <a href="/details-page.html?id=${artist.id}">
+                    <img src="${artist.albumCoverUrl}" alt="Image of an album cover"/>
                     <h3>
-                        ${result[i].title.rendered}
+                        ${artist.albumName}
                     </h3>
                 </a>
             </div>
             `;
-    }
+    });
     /* ---------------------------------------- Carousel slider --------------------------------------------- */
     $(".carousel").slick({
       slidesToShow: 4,
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 3000,
-      prevArrow: '<span class="prev_arrow"><i class="fas fa-caret-left"></i></span>',
-      nextArrow: '<span class="next_arrow"><i class="fas fa-caret-right"></i></span>',
+      prevArrow:
+        '<span class="prev_arrow"><i class="fas fa-caret-left"></i></span>',
+      nextArrow:
+        '<span class="next_arrow"><i class="fas fa-caret-right"></i></span>',
       responsive: [
         {
           breakpoint: 991,

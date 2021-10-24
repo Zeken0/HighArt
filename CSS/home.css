@@ -333,25 +333,21 @@ footer {
 }
 
 .fa-facebook-f:hover {
-  font-size: 3.11rem;
   cursor: pointer;
   transition: 0.3s;
   color: #4267b2;
 }
 .fa-instagram:hover {
-  font-size: 3.11rem;
   cursor: pointer;
   transition: 0.3s;
   color: #e1306c;
 }
 .fa-spotify:hover {
-  font-size: 3.11rem;
   cursor: pointer;
   transition: 0.3s;
   color: #1db954;
 }
 .fa-twitter:hover {
-  font-size: 3.11rem;
   cursor: pointer;
   transition: 0.3s;
   color: #1da1f2;

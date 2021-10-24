@@ -1,67 +1,67 @@
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
-const id = params.get('id');
+const id = params.get("id");
 
 async function getPosts(postId) {
-    try {
-        console.log(postId);
-        const repsonse = await fetch('https://api.a1tech.store//wp-json/wp/v2/posts/' + postId + '?_embed');
-        const result = await repsonse.json();
+  try {
+    console.log(postId);
+    const repsonse = await fetch("http://localhost:1337/Artists/" + postId);
+    const data = await repsonse.json();
 
-            document.title +=`
-                ${result.title.rendered}
+    document.title += `
+                ${data.albumName}
             `;
-            document.querySelector('.container').innerHTML =`
+    document.querySelector(".container").innerHTML = `
                 <div class="content">
                     <h1>
-                        ${result.title.rendered}
+                        ${data.albumName}
                     </h1>
                     <h2>
-                        ${result.slug} <i class="fas fa-user"></i>
+                        ${data.artistName} <i class="fas fa-user"></i>
                     </h2>
                     <p>
-                        ${result.content.rendered}
+                        ${data.startReview}
                     </p>
-                    <img class="zoom" src="${result._embedded['wp:featuredmedia'][0].source_url}" alt="Image of an album cover"/>
+                    <img class="zoom" src="${data.albumCoverUrl}" alt="Image of an album cover"/>
                     <div class="modal-container">
-                        <img class="modal" src="${result._embedded['wp:featuredmedia'][0].source_url}" alt="Image of an album cover"/>
+                        <img class="modal" src="${data.albumCoverUrl}" alt="Image of an album cover"/>
                     </div>
                     <p>
-                        ${result.excerpt.rendered}
+                        ${data.endReview}
                     </p>
                 </div>
             `;
 
-        /* ------------------------------------------ zoomEffect ---------------------------------------------- */
-        const imgTooZoom = document.querySelector('.zoom');
-        const modalContainer = document.querySelector('.modal-container');
+    /* ------------------------------------------ zoomEffect ---------------------------------------------- */
+    const imgTooZoom = document.querySelector(".zoom");
+    const modalContainer = document.querySelector(".modal-container");
 
-        imgTooZoom.addEventListener('click', () => {
-            modalContainer.classList.add('show')
-        });
-        
-        modalContainer.addEventListener('click', () => {
-            modalContainer.classList.remove('show')
-        });
-        /* ------------------------------------------ /zoomEffect ---------------------------------------------- */
-        
-        /* ------------------------------------------ hideLoader ---------------------------------------------- */
-        const loaderContent = document.querySelector('.loader')
+    imgTooZoom.addEventListener("click", () => {
+      modalContainer.classList.add("show");
+    });
 
-        setTimeout( function() {
-            loaderContent.style.display = "none";
-        });
-        /* ----------------------------------------- /hideLoader ---------------------------------------------- */
-    } catch (error) {
-        document.querySelector('.alert').innerHTML += thisIsAnAlert(
-            'An error has occured',
-            'danger'
-        );
-        console.log(error);
-    } finally {
-        setTimeout( function() {
-            document.querySelector('.alert').innerHTML = '';
-        }, 3000);
-    }
-};
+    modalContainer.addEventListener("click", () => {
+      modalContainer.classList.remove("show");
+    });
+    /* ------------------------------------------ /zoomEffect ---------------------------------------------- */
+
+    /* ------------------------------------------ hideLoader ---------------------------------------------- */
+    const loaderContent = document.querySelector(".loader");
+
+    setTimeout(function () {
+      loaderContent.style.display = "none";
+    });
+    /* ----------------------------------------- /hideLoader ---------------------------------------------- */
+  } catch (error) {
+    document.querySelector(".alert").innerHTML += thisIsAnAlert(
+      "An error has occured",
+      "danger"
+    );
+    console.log(error);
+  } finally {
+    setTimeout(function () {
+      document.querySelector(".alert").innerHTML = "";
+    }, 3000);
+  }
+}
 getPosts(id);
