@@ -17,7 +17,7 @@ showMoreBtn.onclick = function toggleBtn() {
 /* ----------------------------------------------- /ShowMoreButton ----------------------------------------------- */
 async function getPosts() {
   try {
-    const repsonse = await fetch("http://localhost:1337/Artists/");
+    const repsonse = await fetch("https://highart.herokuapp.com/Artists/");
     const data = await repsonse.json();
 
     data.forEach((artist) => {

@@ -5,7 +5,9 @@ const id = params.get("id");
 async function getPosts(postId) {
   try {
     console.log(postId);
-    const repsonse = await fetch("http://localhost:1337/Artists/" + postId);
+    const repsonse = await fetch(
+      "https://highart.herokuapp.com/Artists/" + postId
+    );
     const data = await repsonse.json();
 
     document.title += `
