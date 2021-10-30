@@ -117,6 +117,7 @@ main {
   height: 100%;
   margin: auto;
   margin-bottom: 1rem;
+  margin-top: 1.5rem;
   display: grid;
   column-gap: 0.1rem;
   grid-template-areas: "left-content right-content";

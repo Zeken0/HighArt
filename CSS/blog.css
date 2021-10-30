@@ -199,7 +199,7 @@ main {
   line-height: 1.6rem;
   letter-spacing: 0.01rem;
   font-size: 1rem;
-  width: 60%;
+  width: 69%;
   margin: auto;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -431,8 +431,9 @@ footer {
     right: 30px;
   }
 
-  .container p {
-    width: 70%;
+  .container p,
+  .containerTwo p {
+    width: 83%;
   }
 
   .container,
