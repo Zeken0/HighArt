@@ -47,6 +47,10 @@ nav {
   position: relative;
 }
 
+.searchMobile {
+  display: none;
+}
+
 #bar {
   width: 93.5%;
   height: 2rem;
@@ -59,7 +63,8 @@ nav {
   border-radius: 3px 0 0 3px;
 }
 
-.search i {
+.search i,
+.searchMobile i {
   height: 2rem;
   padding: 8px 8px 11px 8px;
   color: white;
@@ -463,6 +468,36 @@ footer {
 
   .search {
     display: none;
+  }
+
+  .searchMobile {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    margin-right: none;
+    background-color: white;
+  }
+
+  #barMobile {
+    width: 89.36%;
+    height: 2.5rem;
+    background-color: whitesmoke;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 10px 0 10px;
+    font-weight: 500;
+    border-radius: 0px 0 0 0px;
+  }
+
+  .searchMobile i {
+    height: 2.5rem;
+    padding: 11px 11px 11px 11px;
+    color: white;
+    background-color: black;
+    width: fit-content;
+    position: absolute;
+    border-radius: 0;
   }
 
   .menu {

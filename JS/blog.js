@@ -1,3 +1,5 @@
+import writeHtmlToDom from "./libs/writeHtmlToDom.js";
+
 /* ----------------------------------------------- ShowMoreButton ----------------------------------------------- */
 const showMoreBtn = document.querySelector(".btn");
 const secondContent = document.querySelector(".containerTwo");
@@ -15,6 +17,7 @@ showMoreBtn.onclick = function toggleBtn() {
   }
 };
 /* ----------------------------------------------- /ShowMoreButton ----------------------------------------------- */
+
 let containerOne = document.querySelector(".container");
 let containerTwo = document.querySelector(".containerTwo");
 
@@ -25,43 +28,8 @@ async function getData() {
     let artists = data;
 
     artists.forEach((artist) => {
-      containerOne.innerHTML += `
-            <div class="content">
-                <a href="/details-page.html?id=${artist.id}">
-                    <h1>
-                        ${artist.albumName}
-                    </h1>
-                </a>
-                <h2>
-                    ${artist.artistName}  <i class="fas fa-user"></i>
-                </h2>
-                <p>
-                    ${artist.startReview}
-                </p>
-                <a href="/details-page.html?id=${artist.id}">
-                    <img src="${artist.albumCoverUrl}" alt="Image of an album cover"/>
-                </a>
-            </div>
-            `;
-
-      containerTwo.innerHTML += `
-      <div class="content">
-      <a href="/details-page.html?id=${artist.id}">
-          <h1>
-              ${artist.albumName}
-          </h1>
-      </a>
-      <h2>
-          ${artist.artistName}  <i class="fas fa-user"></i>
-      </h2>
-      <p>
-          ${artist.startReview}
-      </p>
-      <a href="/details-page.html?id=${artist.id}">
-          <img src="${artist.albumCoverUrl}" alt="Image of an album cover"/>
-      </a>
-  </div>
-  `;
+      writeHtmlToDom(containerOne, artist);
+      writeHtmlToDom(containerTwo, artist);
     });
 
     const searchInput = document.querySelector("#bar");
@@ -76,43 +44,25 @@ async function getData() {
       containerTwo.innerHTML = "";
 
       filteredArtists.forEach((artist) => {
-        containerOne.innerHTML += `
-            <div class="content">
-                <a href="/details-page.html?id=${artist.id}">
-                    <h1>
-                        ${artist.albumName}
-                    </h1>
-                </a>
-                <h2>
-                    ${artist.artistName}  <i class="fas fa-user"></i>
-                </h2>
-                <p>
-                    ${artist.startReview}
-                </p>
-                <a href="/details-page.html?id=${artist.id}">
-                    <img src="${artist.albumCoverUrl}" alt="Image of an album cover"/>
-                </a>
-            </div>
-            `;
+        writeHtmlToDom(containerOne, artist);
+        writeHtmlToDom(containerTwo, artist);
+      });
+    };
 
-        containerTwo.innerHTML += `
-            <div class="content">
-                <a href="/details-page.html?id=${artist.id}">
-                    <h1>
-                        ${artist.albumName}
-                    </h1>
-                </a>
-                <h2>
-                    ${artist.artistName}  <i class="fas fa-user"></i>
-                </h2>
-                <p>
-                    ${artist.startReview}
-                </p>
-                <a href="/details-page.html?id=${artist.id}">
-                    <img src="${artist.albumCoverUrl}" alt="Image of an album cover"/>
-                </a>
-            </div>
-            `;
+    const searchInputMobile = document.querySelector("#barMobile");
+    searchInputMobile.onkeyup = function () {
+      let filteredArtists = artists.filter((artist) => {
+        return artist.albumName
+          .toLowerCase()
+          .includes(this.value.toLowerCase());
+      });
+
+      containerOne.innerHTML = "";
+      containerTwo.innerHTML = "";
+
+      filteredArtists.forEach((artist) => {
+        writeHtmlToDom(containerOne, artist);
+        writeHtmlToDom(containerTwo, artist);
       });
     };
 
