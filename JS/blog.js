@@ -15,13 +15,17 @@ showMoreBtn.onclick = function toggleBtn() {
   }
 };
 /* ----------------------------------------------- /ShowMoreButton ----------------------------------------------- */
-async function getPosts() {
+let containerOne = document.querySelector(".container");
+let containerTwo = document.querySelector(".containerTwo");
+
+async function getData() {
   try {
     const repsonse = await fetch("https://highart.herokuapp.com/Artists/");
     const data = await repsonse.json();
+    let artists = data;
 
-    data.forEach((artist) => {
-      document.querySelector(".container").innerHTML += `
+    artists.forEach((artist) => {
+      containerOne.innerHTML += `
             <div class="content">
                 <a href="/details-page.html?id=${artist.id}">
                     <h1>
@@ -40,7 +44,7 @@ async function getPosts() {
             </div>
             `;
 
-      document.querySelector(".containerTwo").innerHTML += `
+      containerTwo.innerHTML += `
       <div class="content">
       <a href="/details-page.html?id=${artist.id}">
           <h1>
@@ -59,8 +63,59 @@ async function getPosts() {
   </div>
   `;
     });
-    {
-    }
+
+    const searchInput = document.querySelector("#bar");
+    searchInput.onkeyup = function () {
+      let filteredArtists = artists.filter((artist) => {
+        return artist.albumName
+          .toLowerCase()
+          .includes(this.value.toLowerCase());
+      });
+
+      containerOne.innerHTML = "";
+      containerTwo.innerHTML = "";
+
+      filteredArtists.forEach((artist) => {
+        containerOne.innerHTML += `
+            <div class="content">
+                <a href="/details-page.html?id=${artist.id}">
+                    <h1>
+                        ${artist.albumName}
+                    </h1>
+                </a>
+                <h2>
+                    ${artist.artistName}  <i class="fas fa-user"></i>
+                </h2>
+                <p>
+                    ${artist.startReview}
+                </p>
+                <a href="/details-page.html?id=${artist.id}">
+                    <img src="${artist.albumCoverUrl}" alt="Image of an album cover"/>
+                </a>
+            </div>
+            `;
+
+        containerTwo.innerHTML += `
+            <div class="content">
+                <a href="/details-page.html?id=${artist.id}">
+                    <h1>
+                        ${artist.albumName}
+                    </h1>
+                </a>
+                <h2>
+                    ${artist.artistName}  <i class="fas fa-user"></i>
+                </h2>
+                <p>
+                    ${artist.startReview}
+                </p>
+                <a href="/details-page.html?id=${artist.id}">
+                    <img src="${artist.albumCoverUrl}" alt="Image of an album cover"/>
+                </a>
+            </div>
+            `;
+      });
+    };
+
     /* ---------------------------------------- BackToTopButton --------------------------------------------- */
 
     const backToTopButton = document.querySelector(".up-btn");
@@ -103,11 +158,10 @@ async function getPosts() {
       "An error has occured",
       "danger"
     );
-    console.log(error);
   } finally {
     setTimeout(function () {
       document.querySelector(".alert").innerHTML = "";
     }, 3000);
   }
 }
-getPosts();
+getData();

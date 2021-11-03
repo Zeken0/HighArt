@@ -1,80 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="Description" content="This is the blog-page to 'HIGH ART' the site about the most influential music albums of the 21th century">
-        <link rel="stylesheet" href="/CSS/blog.css">
-        <script src="https://kit.fontawesome.com/31d00bb5b7.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-        <title>Blog - HIGH ART</title>
-        <!-- Hotjar Tracking Code for https://px01.netlify.app/ -->
-        <script>
-            (function(h,o,t,j,a,r){
-                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-                h._hjSettings={hjid:2406524,hjsv:6};
-                a=o.getElementsByTagName('head')[0];
-                r=o.createElement('script');r.async=1;
-                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-                a.appendChild(r);
-            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-        </script>
-    </head>
-    <body>
-        <div class="alert"></div>
-        <header>
-            <nav>
-                <div class="logo">
-                    <a href="/index.html"><img src="/img/logo.png" alt="logo"></a>
-                </div>
-                <div class="search">
-                    <input type="search" name="search" placeholder="Search" id="bar">
-                    <a href="/blog-page.html"><i class="fas fa-search"></i></a>
-                </div>
-                <div>
-                    <button class="hamburger" onclick="toggleClass()">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
-                <div class="menu">
-                    <ul>
-                        <li>
-                            <a href="/index.html">Home</a>
-                            <a href="/about.html">About</a>
-                            <a class="active" href="/blog-page.html">Blog</a>
-                            <a href="/contact-page.html">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <div class="alert"></div>
-            <div class="loader">
-                <div>
-                    <img src="/img/Loading-gif.gif" alt="Loading gif">
-                </div>
-            </div>
-            <div class="container"></div>
-            <button class="up-btn">
-                <i class="fas fa-angle-double-up"></i>
-            </button>
-            <div class="containerTwo"></div>
-            <button class="btn">
-                Show More
-            </button>
-        </main>
-        <footer>
-            <div class="footer-items">
-                <div><i class="fab fa-spotify"></i></div>
-                <div><i class="fab fa-instagram"></i></div>
-                <div><i class="fab fa-twitter"></i></div>
-                <div><i class="fab fa-facebook-f"></i></div>
-            </div>
-        </footer>
-        <script src="/JS/components/hamburger-menu.js"></script>
-        <script src="/JS//components/alert.js"></script>
-        <script src="/JS/blog.js"></script>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="Description"
+      content="This is the blog-page to 'HIGH ART' the site about the most influential music albums of the 21th century"
+    />
+    <link rel="stylesheet" href="/CSS/blog.css" />
+    <script
+      src="https://kit.fontawesome.com/31d00bb5b7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Blog - HIGH ART</title>
+    <!-- Hotjar Tracking Code for https://px01.netlify.app/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2406524, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+  <body>
+    <div class="alert"></div>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="/index.html"><img src="/img/logo.png" alt="logo" /></a>
+        </div>
+        <div class="search">
+          <input
+            type="search"
+            name="search"
+            placeholder="Search by album name"
+            id="bar"
+          />
+          <a href="/blog-page.html"><i class="fas fa-search"></i></a>
+        </div>
+        <div>
+          <button class="hamburger" onclick="toggleClass()">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="/index.html">Home</a>
+              <a href="/about.html">About</a>
+              <a class="active" href="/blog-page.html">Blog</a>
+              <a href="/contact-page.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="alert"></div>
+      <div class="loader">
+        <div>
+          <img src="/img/Loading-gif.gif" alt="Loading gif" />
+        </div>
+      </div>
+      <div class="container"></div>
+      <button class="up-btn">
+        <i class="fas fa-angle-double-up"></i>
+      </button>
+      <div class="containerTwo"></div>
+      <button class="btn">Show More</button>
+    </main>
+    <footer>
+      <div class="footer-items">
+        <div><i class="fab fa-spotify"></i></div>
+        <div><i class="fab fa-instagram"></i></div>
+        <div><i class="fab fa-twitter"></i></div>
+        <div><i class="fab fa-facebook-f"></i></div>
+      </div>
+    </footer>
+    <script src="/JS/components/hamburger-menu.js"></script>
+    <script src="/JS//components/alert.js"></script>
+    <script src="/JS/blog.js"></script>
+  </body>
 </html>
