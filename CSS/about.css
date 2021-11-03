@@ -354,7 +354,7 @@ footer {
     border: none;
     outline: none;
     font-size: 1rem;
-    padding: 0 15px 0 20px;
+    padding: 0 15px 0 15px;
     font-weight: 500;
     border-radius: 0px 0 0 0px;
   }
