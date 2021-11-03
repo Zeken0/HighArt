@@ -1,4 +1,10 @@
-function toggleClass(){
-    let menu = document.querySelector(".menu");
-    menu.classList.toggle("togglecls")
+let menu = document.querySelector(".menu");
+function toggleClass() {
+  menu.classList.toggle("togglecls");
+}
+
+if (menu.includes("togglecls")) {
+  window.onclick = function () {
+    menu.classList.remove("togglecls");
+  };
 }
