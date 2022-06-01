@@ -50,4 +50,4 @@ Make sure to open a pull request so the code can be reviewed.
 
 ## Contact
 
-[My LinkedIn page](https://www.linkedin.com/in/ahmed-jibril-242614215/)
+Ahmed.J.Jibril@hotmail.com
