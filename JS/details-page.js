@@ -6,7 +6,7 @@ async function getPosts(postId) {
   try {
     console.log(postId);
     const repsonse = await fetch(
-      "https://highart.herokuapp.com/Artists/" + postId
+      "https://highart.onrender.com/artists/" + postId
     );
     const data = await repsonse.json();
 

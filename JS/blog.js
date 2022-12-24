@@ -23,7 +23,7 @@ let containerTwo = document.querySelector(".containerTwo");
 
 async function getData() {
   try {
-    const repsonse = await fetch("https://highart.herokuapp.com/Artists/");
+    const repsonse = await fetch("https://highart.onrender.com/artists/");
     const data = await repsonse.json();
     let artists = data;
 

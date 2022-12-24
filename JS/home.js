@@ -1,6 +1,6 @@
 async function getPosts() {
   try {
-    const repsonse = await fetch("https://highart.herokuapp.com/Artists");
+    const repsonse = await fetch("https://highart.onrender.com/artists");
     const data = await repsonse.json();
 
     data.forEach((artist) => {
